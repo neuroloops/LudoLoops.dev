@@ -1,8 +1,19 @@
 import * as React from 'react'
+import Hero from '../components/Hero'
+import Layout from '../components/Layout'
+import Navbar from '../components/Navbar'
+import Projets from '../components/Projets'
+import Skills from '../components/Skills'
 
 // markup
 const IndexPage = () => {
-  return <h1>index</h1>
+  return (
+    <Layout>
+      <Hero />
+      <Skills />
+      <Projets />
+    </Layout>
+  )
 }
 
 export default IndexPage
