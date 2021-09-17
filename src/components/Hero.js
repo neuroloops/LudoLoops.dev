@@ -1,26 +1,57 @@
 import React from 'react'
-import Navbar from './Navbar'
 import styled from 'styled-components'
+import Navbar from './Navbar'
+import composition from '../assets/composition.svg'
 
 const Hero = () => {
   return (
-    <section className='hero'>
-      <Navbar />
-      <h1>LudoLoops</h1>
-      <h1>Full stack developer</h1>
+    <HeroWrapper className='hero'>
+      <section>
+        <Navbar />
+        <HeroSection>
+          <LeftSide>
+            <h1>LudoLoops</h1>
+            <h1>Full stack developer</h1>
 
-      <h3>title h3</h3>
-      <Subtext>Frontend • Backend • Devops • Tools</Subtext>
+            <Subtext>Frontend • Backend • Devops • Tools</Subtext>
 
-      <div className='btn btn-clear'>Contact with me</div>
-    </section>
+            <ContactMe className='btn btn-clear'>Contact with me</ContactMe>
+          </LeftSide>
+          <aside>
+            <img src={composition} alt='laptop with LudoLoops logo' />
+          </aside>
+        </HeroSection>
+      </section>
+    </HeroWrapper>
   )
 }
 
 export default Hero
 
+const LeftSide = styled.div`
+  padding-left: 110px;
+`
 const Subtext = styled.div`
+  margin-top: 29px;
   color: white;
   font-size: 14px;
   font-weight: 600;
+`
+const HeroSection = styled.section`
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+`
+const HeroWrapper = styled.div`
+  background-color: #0c265b;
+  width: 100%;
+  background-size: contain;
+  height: 692px;
+  padding-top: 43px;
+`
+
+const ContactMe = styled.div`
+  margin-top: 40px;
 `
