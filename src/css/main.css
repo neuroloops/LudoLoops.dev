@@ -1,0 +1,67 @@
+:root {
+  --bg-white: #FFFFF;
+  --txt-white: #fff;
+  --color1: #42e8e0;
+  --color2: #5cfff3;
+  --color3: #312a91;
+  --color4: #0c265b;
+  --btn-1: #01fef0;
+  --btn_dark-fill: #142244;
+  --btn_dark-text: #01fefc;
+  --btn_clear-fill: #01fef0;
+  --btn_clear-text: #020244;
+}
+
+body {
+  font-family: Montserrat, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(-bg-white);
+}
+
+.btn {
+  border-radius: 68px;
+  height: 58px;
+  width: 196px;
+  text-align: center;
+  line-height: 58px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn-clear {
+  background-color: var(--btn_clear-fill);
+  color: var(--btn_clear-text);
+}
+
+.btn-dark {
+  background-color: var(--btn_dark-fill);
+  color: var(--btn_dark-text);
+}
+
+.page-link {
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--txt-white);
+}
+.nav-link {
+  list-style: none;
+}
+h1 {
+  font-weight: 800;
+  font-size: 48px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 14px;
+}

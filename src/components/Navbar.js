@@ -1,10 +1,15 @@
 import React from 'react'
+import Links from '../constants/links'
 
 const Navbar = () => {
   return (
-    <div>
-      <h2>navbar</h2>
-    </div>
+    <nav>
+      <div>
+        <div>logo</div>
+        <Links />
+      </div>
+      <div>email</div>
+    </nav>
   )
 }
 
