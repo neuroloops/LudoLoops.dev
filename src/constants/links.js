@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-const Links = ({ styleClass, children }) => {
+const Links = () => {
   return (
     <ul className='nav-link'>
       <li>

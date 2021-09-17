@@ -4,10 +4,8 @@ import Links from '../constants/links'
 const Navbar = () => {
   return (
     <nav>
-      <div>
-        <div>logo</div>
-        <Links />
-      </div>
+      <div>logo</div>
+      <Links />
       <div>email</div>
     </nav>
   )

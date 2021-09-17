@@ -39,12 +39,23 @@ body {
 }
 
 .page-link {
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 13px;
   text-decoration: none;
   color: var(--txt-white);
 }
+
 .nav-link {
   list-style: none;
+  display: flex;
+  gap: 41px;
+}
+
+.hero {
+  background-color: #0c265b;
+}
+nav {
+  display: flex;
 }
 h1 {
   font-weight: 800;
