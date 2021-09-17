@@ -15,9 +15,23 @@
 body {
   font-family: Montserrat, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(-bg-white);
+  background-color: #0c265b;
 }
 
+.email {
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.email span {
+  margin-left: 12px;
+}
+.github {
+  margin-left: 38px;
+}
 .btn {
   border-radius: 68px;
   height: 58px;
@@ -49,14 +63,21 @@ body {
   list-style: none;
   display: flex;
   gap: 41px;
+  width: 690px;
+  justify-content: center;
+  padding: 0;
 }
 
 .hero {
   background-color: #0c265b;
 }
-nav {
+
+.navBar {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 h1 {
   font-weight: 800;
   font-size: 48px;
