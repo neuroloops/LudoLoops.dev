@@ -37,9 +37,11 @@ body {
 .email span {
   margin-left: 12px;
 }
+
 .github {
   margin-left: 38px;
 }
+
 .btn {
   border-radius: 68px;
   height: 58px;
@@ -76,8 +78,19 @@ body {
   padding: 0;
 }
 
+/* .hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
 .hero {
   background-color: #0c265b;
+  width: 100%;
+  background: url('../assets/bg-hero.svg');
+  background-size: contain;
+  height: 692px;
 }
 
 .navBar {
@@ -89,6 +102,8 @@ body {
 h1 {
   font-weight: 800;
   font-size: 48px;
+  font-family: Montserrat;
+  color: white;
 }
 
 h2 {

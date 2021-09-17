@@ -4,6 +4,7 @@ module.exports = {
     title: 'LudoLoops',
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     'gatsby-plugin-mdx',
     {
       resolve: `gatsby-plugin-google-fonts`,
