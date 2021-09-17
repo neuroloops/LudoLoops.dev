@@ -10,7 +10,7 @@ const Hero = () => {
       <h1>Full stack developer</h1>
 
       <h3>title h3</h3>
-      <Subtext className='test'>frontend • Backend • Devops • Tools</Subtext>
+      <Subtext>Frontend • Backend • Devops • Tools</Subtext>
 
       <div className='btn btn-clear'>Contact with me</div>
     </section>
@@ -20,5 +20,7 @@ const Hero = () => {
 export default Hero
 
 const Subtext = styled.div`
-  color: red;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
 `
