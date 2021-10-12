@@ -216,16 +216,16 @@ const Wrapper = styled.div`
   }
 `
 const Section = styled.section`
-  flex-basis: auto;
-  background: white;
-  padding-top: ${63 * 2}px;
   display: flex;
+  flex-basis: auto;
   flex-direction: column;
   justify-content: center;
+  padding-top: ${63 * 2}px;
   padding-left: ${11 * 2}px;
   margin-left: ${10 * 2}px;
   margin-right: ${28 * 2}px;
   border-top: ${1 * 2}px solid var(--txt-resume);
+  background: white;
   hr {
     border: ${1 * 2}px solid var(--txt-resume);
   }
@@ -274,33 +274,45 @@ const Aside = styled.aside`
 const Header = styled.header`
   display: flex;
   height: ${97 * 2}px;
-  margin: 0 auto;
-  h1 {
-    font-size: ${36 * 2}px;
-    color: var(--txt-resume);
-    text-transform: uppercase;
-    font-weight: 900;
-    & span {
-      font-weight: 400;
-    }
-  }
-  p {
-    font-size: 24px;
-  }
-  .subtext {
-    font-size: 20px;
-  }
+
   .photo {
     flex-basis: ${209 * 2}px;
     z-index: 99;
     display: flex;
     justify-content: center;
-
+    width: ${209 * 2}px;
     & img {
       width: ${97 * 2}px;
     }
   }
   section {
+    width: 709px;
+
     text-align: right;
+    flex-basis: auto;
+
+    margin-right: ${28 * 2}px;
+
+    h1 {
+      width: 100%;
+      font-size: ${36 * 2}px;
+      color: var(--txt-resume);
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+      & span {
+        font-weight: 400;
+      }
+    }
+    p {
+      font-size: 24px;
+      margin-top: 10px;
+      padding-right: 0px;
+    }
+    .subtext {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-left: 0;
+    }
   }
 `
