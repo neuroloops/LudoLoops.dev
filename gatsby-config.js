@@ -6,10 +6,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-mdx',
+
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Montserrat\:800`],
+        fonts: [`Montserrat\:800, 400`],
         display: 'swap',
       },
     },

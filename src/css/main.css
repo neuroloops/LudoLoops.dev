@@ -10,6 +10,7 @@
   --btn_dark-text: #01fefc;
   --btn_clear-fill: #01fef0;
   --btn_clear-text: #020244;
+  --txt-resume: #192b53;
 }
 
 *,
@@ -105,10 +106,4 @@ h3 {
 p {
   font-weight: 500;
   font-size: 14px;
-}
-
-/* resume */
-
-.resume {
-  color: white;
 }
