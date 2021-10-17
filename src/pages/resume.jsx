@@ -5,7 +5,8 @@ import { css } from '@emotion/react'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
 import myPic from '../assets/images/Ludo_with_logo.png'
-// markup
+import ExtLink from '../assets/svg/extLink'
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -30,9 +31,25 @@ const IndexPage = () => {
             <hr />
             <ul>
               <li>Franconville - Paris</li>
-              <li>ludoloops@protonmail.com </li>
-              <li>https://github.com/neuroloops</li>
-              <li>https://www.linkedin.com/in/ludovic-dumas/</li>
+
+              <li>
+                <a href='mailto:ludoloops@protonmail.com'>
+                  ludoloops@protonmail.com
+                  <ExtLink className='extLink' />
+                </a>
+              </li>
+              <li>
+                <a href='https://github.com/neuroloops'>
+                  github.com/neuroloops
+                  <ExtLink className='extLink' />
+                </a>
+              </li>
+              <li>
+                <a href='http://https://www.linkedin.com/in/ludovic-dumas/'>
+                  linkedin.com/in/ludovic-dumas/
+                  <ExtLink className='extLink' />
+                </a>
+              </li>
             </ul>
             <h2>Qualité personnelles</h2>
             <hr />
@@ -199,7 +216,7 @@ const Wrapper = styled.div`
   max-width: ${595 * 2}px;
   margin: 0 auto;
   background: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--txt-resume);
 
   ul {
@@ -208,7 +225,7 @@ const Wrapper = styled.div`
 
   h2 {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 2.5rem;
   }
   hr {
     margin-bottom: ${6 * 2}px;
@@ -252,13 +269,22 @@ const UlCompetence = styled.ul`
 const Main = styled.div`
   display: flex;
   width: 100%;
+  line-height: 2rem;
 `
 const Aside = styled.aside`
   flex-basis: ${209 * 2}px;
   padding-left: ${10 * 2}px;
   padding-top: ${38 * 2}px;
-  /* width: ${209 * 2}px; */
 
+  .extLink {
+    /* width: 4vmin; */
+    width: 20px;
+    margin-left: 0.5rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
   color: white;
   background-color: var(--txt-resume);
   ul {
@@ -271,6 +297,7 @@ const Aside = styled.aside`
     border: ${1 * 2}px solid white;
   }
 `
+
 const Header = styled.header`
   display: flex;
   height: ${97 * 2}px;
@@ -295,7 +322,7 @@ const Header = styled.header`
 
     h1 {
       width: 100%;
-      font-size: ${36 * 2}px;
+      font-size: 4.5rem;
       color: var(--txt-resume);
       text-transform: uppercase;
       font-weight: 900;
@@ -305,12 +332,12 @@ const Header = styled.header`
       }
     }
     p {
-      font-size: 24px;
+      font-size: 1.5rem;
       margin-top: 10px;
       padding-right: 0px;
     }
     .subtext {
-      font-size: 20px;
+      font-size: 1.25rem;
       margin-top: 5px;
       margin-left: 0;
     }
