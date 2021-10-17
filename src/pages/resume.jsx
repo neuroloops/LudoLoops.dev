@@ -34,24 +34,21 @@ const IndexPage = () => {
 
               <li>
                 <a href='mailto:ludoloops@protonmail.com'>
-                  ludoloops@protonmail.com
-                  <ExtLink className='extLink' />
+                  ludoloops@protonmail.com <ExtLink className='extLink' />
                 </a>
               </li>
               <li>
                 <a href='https://github.com/neuroloops'>
-                  github.com/neuroloops
-                  <ExtLink className='extLink' />
+                  github.com/neuroloops <ExtLink className='extLink' />
                 </a>
               </li>
               <li>
-                <a href='http://https://www.linkedin.com/in/ludovic-dumas/'>
-                  linkedin.com/in/ludovic-dumas/
-                  <ExtLink className='extLink' />
+                <a href='http://https://www.linkedin.com/in/ludovic-dumas'>
+                  linkedin.com/in/ludovic-dumas <ExtLink className='extLink' />
                 </a>
               </li>
             </ul>
-            <h2>Qualité personnelles</h2>
+            <h2>Qualités personnelles</h2>
             <hr />
             <ul>
               <li>Adaptation</li>
@@ -86,7 +83,7 @@ const IndexPage = () => {
             </ul>
           </Aside>
           <Section>
-            <h2>Compétence</h2>
+            <h2>Compétences</h2>
             <hr />
             <UlCompetence>
               <li>
@@ -213,7 +210,7 @@ const IndexPage = () => {
 export default IndexPage
 
 const Wrapper = styled.div`
-  max-width: ${595 * 2}px;
+  max-width: 1190px;
   margin: 0 auto;
   background: white;
   font-size: 1.25rem;
@@ -225,102 +222,35 @@ const Wrapper = styled.div`
 
   h2 {
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-right: 1rem;
   }
-  hr {
-    margin-bottom: ${6 * 2}px;
-    width: ${40 * 2}px;
-  }
-`
-const Section = styled.section`
-  display: flex;
-  flex-basis: auto;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: ${63 * 2}px;
-  padding-left: ${11 * 2}px;
-  margin-left: ${10 * 2}px;
-  margin-right: ${28 * 2}px;
-  border-top: ${1 * 2}px solid var(--txt-resume);
-  background: white;
-  hr {
-    border: ${1 * 2}px solid var(--txt-resume);
-  }
-  li {
-    display: flex;
-    margin-bottom: ${13}px;
-    & span {
-      flex-basis: ${96 * 2}px;
-    }
-  }
-  h2 {
-    margin-top: 26px;
-  }
-`
-const UlCompetence = styled.ul`
-  line-height: ${14 * 2}px;
-  padding-left: ${21 * 2}px;
-  display: block;
-  li {
-    list-style-type: disc;
-    display: list-item;
-  }
-`
-const Main = styled.div`
-  display: flex;
-  width: 100%;
-  line-height: 2rem;
-`
-const Aside = styled.aside`
-  flex-basis: ${209 * 2}px;
-  padding-left: ${10 * 2}px;
-  padding-top: ${38 * 2}px;
 
-  .extLink {
-    /* width: 4vmin; */
-    width: 20px;
-    margin-left: 0.5rem;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  color: white;
-  background-color: var(--txt-resume);
-  ul {
-    margin-bottom: ${25 * 2}px;
-  }
-  li {
-    padding-left: ${11 * 2}px;
-  }
   hr {
-    border: ${1 * 2}px solid white;
+    margin-bottom: 0.75rem;
+    width: 5rem;
+    border: 0.2rem solid;
   }
 `
 
 const Header = styled.header`
   display: flex;
-  height: ${97 * 2}px;
 
   .photo {
-    flex-basis: ${209 * 2}px;
-    z-index: 99;
     display: flex;
     justify-content: center;
-    width: ${209 * 2}px;
+    flex: 0 0 40%;
+    /* width: 26.125rem; */
     & img {
-      width: ${97 * 2}px;
+      width: 12.125rem;
     }
   }
   section {
-    width: 709px;
-
     text-align: right;
-    flex-basis: auto;
-
-    margin-right: ${28 * 2}px;
-
+    flex: 1 0 auto;
+    padding-right: 3.5rem;
     h1 {
+      display: flex;
       width: 100%;
       font-size: 4.5rem;
       color: var(--txt-resume);
@@ -333,13 +263,78 @@ const Header = styled.header`
     }
     p {
       font-size: 1.5rem;
-      margin-top: 10px;
-      padding-right: 0px;
+      margin-top: 0.625rem;
+      padding-right: 0;
     }
     .subtext {
       font-size: 1.25rem;
-      margin-top: 5px;
+      margin-top: 0.3125rem;
       margin-left: 0;
     }
+  }
+`
+
+const Main = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  line-height: 2rem;
+`
+
+const Aside = styled.aside`
+  padding-left: 1.25rem;
+  padding-top: 4.75rem;
+  flex: 0 0 auto;
+  .extLink {
+    width: 3vmin;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  color: white;
+  background-color: var(--txt-resume);
+  ul {
+    margin-bottom: 6.25rem;
+  }
+  li {
+    padding-left: 1.375rem;
+  }
+  hr {
+    background-color: white;
+  }
+`
+
+const Section = styled.section`
+  display: flex;
+  flex: 0 0 50%;
+  /* flex-basis: auto; */
+
+  flex-direction: column;
+  padding-top: 4.75rem;
+  padding-left: 2.3rem;
+  margin-left: 1.25rem;
+  margin-right: 3.5rem;
+  border-top: 0.125rem solid var(--txt-resume);
+  background: white;
+  hr {
+    background-color: var(--txt-resume);
+  }
+  li {
+    display: flex;
+    margin-bottom: 0.8125rem;
+    & span {
+      flex: 0 0 160px;
+    }
+  }
+`
+
+const UlCompetence = styled.ul`
+  line-height: 1.75rem;
+  padding-left: 2.625rem;
+  display: block !important;
+  li {
+    list-style-type: disc !important;
+    display: list-item !important;
   }
 `
