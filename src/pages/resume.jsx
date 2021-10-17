@@ -13,9 +13,7 @@ const IndexPage = () => {
       <Wrapper>
         <Header>
           <div className='photo'>
-            <div className='imgContainer'>
-              <img src={myPic} alt='' />
-            </div>
+            <img src={myPic} alt='' />
           </div>
           <section>
             <h1>
@@ -210,11 +208,12 @@ const IndexPage = () => {
 export default IndexPage
 
 const Wrapper = styled.div`
-  max-width: 1190px;
+  /* max-width: 1190px; */
   margin: 0 auto;
   background: white;
-  font-size: 1.25rem;
+
   color: var(--txt-resume);
+  font-size: 1.3125rem;
 
   ul {
     list-style-type: none;
@@ -222,7 +221,7 @@ const Wrapper = styled.div`
 
   h2 {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.125rem;
     margin-right: 1rem;
   }
 
@@ -235,12 +234,14 @@ const Wrapper = styled.div`
 
 const Header = styled.header`
   display: flex;
-
+  padding-top: 1.5rem;
   .photo {
-    display: flex;
-    justify-content: center;
     flex: 0 0 40%;
-    /* width: 26.125rem; */
+    display: table-cell;
+    vertical-align: middle;
+
+    text-align: center;
+
     & img {
       width: 12.125rem;
     }
@@ -249,9 +250,10 @@ const Header = styled.header`
     text-align: right;
     flex: 1 0 auto;
     padding-right: 3.5rem;
+
     h1 {
       display: flex;
-      width: 100%;
+      flex-wrap: wrap;
       font-size: 4.5rem;
       color: var(--txt-resume);
       text-transform: uppercase;
@@ -284,9 +286,9 @@ const Main = styled.div`
 const Aside = styled.aside`
   padding-left: 1.25rem;
   padding-top: 4.75rem;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   .extLink {
-    width: 3vmin;
+    width: 1.2rem;
   }
   a {
     color: white;
@@ -295,13 +297,15 @@ const Aside = styled.aside`
   color: white;
   background-color: var(--txt-resume);
   ul {
-    margin-bottom: 6.25rem;
+    margin-bottom: 3.25rem;
   }
   li {
     padding-left: 1.375rem;
   }
   hr {
     background-color: white;
+    color: white;
+    border-color: white;
   }
 `
 
@@ -309,7 +313,9 @@ const Section = styled.section`
   display: flex;
   flex: 0 0 50%;
   /* flex-basis: auto; */
-
+  p {
+    font-size: 1.3125rem;
+  }
   flex-direction: column;
   padding-top: 4.75rem;
   padding-left: 2.3rem;
@@ -319,12 +325,18 @@ const Section = styled.section`
   background: white;
   hr {
     background-color: var(--txt-resume);
+    color: var(--txt-resume);
+    border-color: var(--txt-resume);
   }
   li {
     display: flex;
     margin-bottom: 0.8125rem;
     & span {
       flex: 0 0 160px;
+    }
+    i {
+      font-size: 1.3125rem;
+      opacity: 75%;
     }
   }
 `
