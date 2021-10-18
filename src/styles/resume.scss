@@ -74,8 +74,14 @@ hr {
       'perso formations'
       'skills formations';
   }
+  color: var(--txt-resume);
   & > * {
     padding: 1rem;
+  }
+  & hr {
+    background-color: var(--txt-resume);
+    color: var(--txt-resume);
+    border-color: var(--txt-resume);
   }
 }
 
@@ -85,8 +91,8 @@ hr {
   vertical-align: middle;
   text-align: center;
   padding: 0;
-  margin-top: -20px;
-  margin-bottom: -25px;
+  margin-top: -90px;
+  margin-bottom: -27px;
   z-index: 2;
   & img {
     width: 12.125rem;
@@ -103,12 +109,18 @@ hr {
   grid-area: contact;
   color: white;
   background-color: var(--txt-resume);
+  display: flex;
+  justify-content: space-between;
   .extLink {
     width: 1.2rem;
   }
   a {
     color: white;
     text-decoration: none;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-evenly;
   }
   @include for-tablet-landscape-up {
     padding: 4.75rem 1.25rem 0;
@@ -118,9 +130,9 @@ hr {
 .perso {
   grid-area: perso;
   background-color: var(--txt-resume);
-
+  padding: 2rem 1rem 2rem;
   color: white;
-  & ul {
+  ul {
     display: flex;
     justify-content: space-between;
   }
@@ -129,6 +141,7 @@ hr {
 .competences {
   grid-area: competences;
 }
+
 .formations {
   grid-area: formations;
 }
@@ -140,7 +153,11 @@ hr {
   flex-direction: row;
   background-color: var(--txt-resume);
   color: white;
-
+  & hr {
+    background-color: white;
+    color: white;
+    border-color: white;
+  }
   @include for-tablet-landscape-up {
     flex-direction: column;
   }

@@ -7,6 +7,8 @@ import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
 import myPic from '../assets/images/Ludo_with_logo.png'
 import ExtLink from '../assets/svg/extLink'
+import github from '../assets/svg/github-fill.svg'
+import linkedin from '../assets/svg/linkedin-fill.svg'
 
 const IndexPage = () => {
   return (
@@ -23,29 +25,31 @@ const IndexPage = () => {
           <p className='subtext'>Mobilité: international</p>
         </section>
         <div className='contact'>
-          <h2 className='hide'>Contact</h2>
-          <hr className='hide' />
-          <ul>
-            <li>Franconville - Paris</li>
-            <li>
-              <a href='mailto:ludoloops@protonmail.com' target='_blank'>
-                ludoloops@protonmail.com <ExtLink className='extLink' />
-              </a>
-            </li>
-            <li>
+          <div>
+            <a href='mailto:ludoloops@protonmail.com' target='_blank'>
+              ludoloops@protonmail.com
+            </a>
+            <br />
+            <br />
+            <div className='logo'>
               <a href='https://github.com/neuroloops' target='_blank'>
-                github.com/neuroloops <ExtLink className='extLink' />
+                <img src={github} alt='' />
               </a>
-            </li>
-            <li>
               <a
                 href='https://www.linkedin.com/in/ludovic-dumas'
                 target='_blank'
               >
-                linkedin.com/in/ludovic-dumas <ExtLink className='extLink' />
+                <img src={linkedin} alt='' />
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div>
+            <p>Franconville - Paris</p>
+            <br />
+            <a href='tel:+336196384'>
+              06.19.63.84 <ExtLink className='extLink' />
+            </a>
+          </div>
         </div>
         <div className='perso'>
           <h2 className='hide'>Personnalité</h2>
