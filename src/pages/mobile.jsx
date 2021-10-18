@@ -52,12 +52,11 @@ const IndexPage = () => {
           </div>
         </div>
         <div className='perso'>
-          <h2 className='hide'>Personnalité</h2>
-          <hr className='hide' />
           <ul>
             <li>adaptatif</li>
             <li>Autonome</li>
             <li>Rigoureux</li>
+
             <li>Studieux</li>
             <li>pluricompétent</li>
           </ul>
