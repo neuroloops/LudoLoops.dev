@@ -41,7 +41,7 @@ const IndexPage = () => {
                 </a>
               </li>
               <li>
-                <a href='http://https://www.linkedin.com/in/ludovic-dumas'>
+                <a href='https://www.linkedin.com/in/ludovic-dumas'>
                   linkedin.com/in/ludovic-dumas <ExtLink className='extLink' />
                 </a>
               </li>
@@ -85,11 +85,9 @@ const IndexPage = () => {
             <hr />
             <UlCompetence>
               <li>
-                <b>
-                  Analyser les besoins et objectifs d’un client et les traduire
-                  techniquement{' '}
-                </b>
-                - cahier des charges fonctionnel et technique
+                <b>Analyser les besoins et objectifs</b> d’un client et les
+                traduire techniquement - cahier des charges fonctionnel et
+                technique
               </li>
               <li>
                 <b>Initier, cadrer et lancer un projet web</b> - cadrage du
@@ -208,7 +206,7 @@ const IndexPage = () => {
 export default IndexPage
 
 const Wrapper = styled.div`
-  /* max-width: 1190px; */
+  max-width: 1280px;
   margin: 0 auto;
   background: white;
 
@@ -235,11 +233,11 @@ const Wrapper = styled.div`
 const Header = styled.header`
   display: flex;
   padding-top: 1.5rem;
+
   .photo {
-    flex: 0 0 40%;
+    flex: 0 1 513px;
     display: table-cell;
     vertical-align: middle;
-
     text-align: center;
 
     & img {
@@ -248,11 +246,13 @@ const Header = styled.header`
   }
   section {
     text-align: right;
-    flex: 1 0 auto;
+    flex: 1 0 60%;
     padding-right: 3.5rem;
+    max-width: 800px;
 
     h1 {
       display: flex;
+      justify-content: space-around;
       flex-wrap: wrap;
       font-size: 4.5rem;
       color: var(--txt-resume);
