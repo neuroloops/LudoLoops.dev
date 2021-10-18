@@ -46,7 +46,7 @@ const IndexPage = () => {
                 </a>
               </li>
             </ul>
-            <h2>Qualités personnelles</h2>
+            <h2>Personnalité</h2>
             <hr />
             <ul>
               <li>Adaptation</li>
@@ -284,8 +284,7 @@ const Main = styled.div`
 `
 
 const Aside = styled.aside`
-  padding-left: 1.25rem;
-  padding-top: 4.75rem;
+  padding: 4.75rem 1.25rem 0;
   flex: 0 1 auto;
   .extLink {
     width: 1.2rem;
