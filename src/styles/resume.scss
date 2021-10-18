@@ -1,0 +1,154 @@
+@import './mixin.scss';
+
+h1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 36px;
+  color: var(--txt-resume);
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  & span {
+    font-weight: 400;
+  }
+  @include for-tablet-landscape-up {
+    font-size: 4.5rem;
+  }
+}
+
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  @include for-tablet-landscape-up {
+    font-size: 2.125rem;
+    margin-right: 1rem;
+  }
+}
+
+p {
+  font-size: 14px;
+  @include for-tablet-landscape-up {
+    font-size: 2.125rem;
+    font-size: 1.5rem;
+    margin-top: 0.625rem;
+    padding-right: 0;
+  }
+}
+
+h3 {
+  font-size: 12px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+hr {
+  margin-bottom: 0.75rem;
+  width: 5rem;
+  border: 0.2rem solid;
+}
+
+.wrapper {
+  background-color: white;
+  display: grid;
+  max-width: 1280px;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto;
+  grid-template-areas:
+    'name'
+    'contact'
+    'photo'
+    'perso'
+    'competences'
+    'skills'
+    'formations';
+
+  @include for-tablet-landscape-up {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      'photo name'
+      'contact competences'
+      'perso formations'
+      'skills formations';
+  }
+  & > * {
+    padding: 1rem;
+  }
+}
+
+.photo {
+  grid-area: photo;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0;
+  margin-top: -20px;
+  margin-bottom: -25px;
+  z-index: 2;
+  & img {
+    width: 12.125rem;
+  }
+}
+
+.name {
+  grid-area: name;
+  text-align: center;
+}
+
+.contact {
+  padding: 1rem;
+  grid-area: contact;
+  color: white;
+  background-color: var(--txt-resume);
+  .extLink {
+    width: 1.2rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  @include for-tablet-landscape-up {
+    padding: 4.75rem 1.25rem 0;
+  }
+}
+
+.perso {
+  grid-area: perso;
+  background-color: var(--txt-resume);
+
+  color: white;
+  & ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.competences {
+  grid-area: competences;
+}
+.formations {
+  grid-area: formations;
+}
+
+.skills {
+  grid-area: skills;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: var(--txt-resume);
+  color: white;
+
+  @include for-tablet-landscape-up {
+    flex-direction: column;
+  }
+}
+
+.hide {
+  display: none;
+  @include for-tablet-landscape-up {
+    display: contents;
+  }
+}

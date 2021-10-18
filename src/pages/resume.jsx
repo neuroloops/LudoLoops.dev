@@ -1,6 +1,7 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
+import '../styles/resume.scss'
 
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
@@ -62,7 +63,15 @@ const IndexPage = () => {
               <li>React</li>
               <li>CSS • LESS • SASS </li>
             </ul>
-            <h2>Backend</h2>
+            <h2>backend</h2>
+            <hr />
+            <ul>
+              <li>Auth0</li>
+              <li>REST aPI</li>
+              <li>Database • sql • MangoDB </li>
+              <li>Nodejs • express • nextjs</li>
+            </ul>
+            <h2>devops</h2>
             <hr />
             <ul>
               <li>Proxmox</li>
@@ -218,8 +227,6 @@ const Wrapper = styled.div`
   }
 
   h2 {
-    text-transform: uppercase;
-    font-size: 2.125rem;
     margin-right: 1rem;
   }
 
@@ -250,19 +257,6 @@ const Header = styled.header`
     padding-right: 3.5rem;
     max-width: 800px;
 
-    h1 {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      font-size: 4.5rem;
-      color: var(--txt-resume);
-      text-transform: uppercase;
-      font-weight: 900;
-      text-align: center;
-      & span {
-        font-weight: 400;
-      }
-    }
     p {
       font-size: 1.5rem;
       margin-top: 0.625rem;
@@ -279,7 +273,6 @@ const Header = styled.header`
 const Main = styled.div`
   display: flex;
   flex-wrap: wrap;
-
   line-height: 2rem;
 `
 
