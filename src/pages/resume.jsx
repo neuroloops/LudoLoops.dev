@@ -49,11 +49,11 @@ const IndexPage = () => {
             <h2>Personnalité</h2>
             <hr />
             <ul>
-              <li>Adaptation</li>
+              <li>adaptatif</li>
               <li>Autonome</li>
-              <li>Pluridisciplinaire</li>
               <li>Rigoureux</li>
               <li>Studieux</li>
+              <li>pluricompétent</li>
             </ul>
             <h2>FrontEnd</h2>
             <hr />
@@ -300,6 +300,7 @@ const Aside = styled.aside`
   }
   li {
     padding-left: 1.375rem;
+    text-transform: capitalize;
   }
   hr {
     background-color: white;
