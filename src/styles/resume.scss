@@ -177,6 +177,8 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
+
   div {
     align-self: flex-end;
   }
@@ -188,8 +190,11 @@ body {
 
 .competences {
   line-height: 1.75rem;
-  // padding-left: 2.625rem;
   display: block !important;
+  ul {
+    padding-left: 2.625rem;
+    padding-right: 2.625rem;
+  }
   li {
     list-style-type: disc !important;
     display: list-item !important;
