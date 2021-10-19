@@ -173,3 +173,13 @@ body {
     text-transform: uppercase;
   }
 }
+
+.competences {
+  line-height: 1.75rem;
+  padding-left: 2.625rem;
+  display: block !important;
+  li {
+    list-style-type: disc !important;
+    display: list-item !important;
+  }
+}

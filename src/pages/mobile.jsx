@@ -73,7 +73,7 @@ const IndexPage = () => {
         <div className='competences'>
           <h2>Compétences</h2>
           <hr />
-          <UlCompetence>
+          <ul>
             <li>
               <b>Analyser les besoins et objectifs</b> d’un client et les
               traduire techniquement - cahier des charges fonctionnel et
@@ -91,7 +91,7 @@ const IndexPage = () => {
               <b>Pédagogue </b>en retransmettant des connaissances et aidant à
               la propagation du savoir
             </li>
-          </UlCompetence>
+          </ul>
         </div>
         <div className='skills'>
           <div className='hardSkills'>
@@ -273,13 +273,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-const UlCompetence = styled.ul`
-  line-height: 1.75rem;
-  padding-left: 2.625rem;
-  display: block !important;
-  li {
-    list-style-type: disc !important;
-    display: list-item !important;
-  }
-`
