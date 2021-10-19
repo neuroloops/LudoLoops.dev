@@ -9,14 +9,17 @@ import myPic from '../assets/images/Ludo_with_logo.png'
 import ExtLink from '../assets/svg/extLink'
 import github from '../assets/svg/github-fill.svg'
 import linkedin from '../assets/svg/linkedin-fill.svg'
+import astronomie from '../assets/svg/astronomie.svg'
+import code from '../assets/svg/code.svg'
+import cuisine from '../assets/svg/cuisine.svg'
+import moto from '../assets/svg/moto.svg'
+import canada from '../assets/svg/canada.svg'
+import japon from '../assets/svg/japon.svg'
 
 const IndexPage = () => {
   return (
     <Layout>
       <div className='wrapper'>
-        <div className='photo'>
-          <img src={myPic} alt='' />
-        </div>
         <section className='name'>
           <h1>
             Ludovic <span>Dumas</span>
@@ -25,31 +28,37 @@ const IndexPage = () => {
           <p className='subtext'>Mobilité: international</p>
         </section>
         <div className='contact'>
+          <div className='city'>
+            <p>Franconville - Paris</p>
+
+            <a href='tel:+33668196384'>
+              06.68.19.63.84 <ExtLink className='extLink' />
+            </a>
+          </div>
           <div>
-            <a href='mailto:ludoloops@protonmail.com' target='_blank'>
+            <a
+              href='mailto:ludoloops@protonmail.com'
+              target='_blank'
+              title='email'
+            >
               ludoloops@protonmail.com
             </a>
-            <br />
-            <br />
+
             <div className='logo'>
               <a href='https://github.com/neuroloops' target='_blank'>
-                <img src={github} alt='' />
+                <img src={github} alt='github logo' />
               </a>
               <a
                 href='https://www.linkedin.com/in/ludovic-dumas'
                 target='_blank'
               >
-                <img src={linkedin} alt='' />
+                <img src={linkedin} alt='Linkedin Logo' />
               </a>
             </div>
           </div>
-          <div>
-            <p>Franconville - Paris</p>
-            <br />
-            <a href='tel:+336196384'>
-              06.19.63.84 <ExtLink className='extLink' />
-            </a>
-          </div>
+        </div>
+        <div className='photo'>
+          <img src={myPic} alt='' />
         </div>
         <div className='perso'>
           <ul>
@@ -83,6 +92,44 @@ const IndexPage = () => {
               la propagation du savoir
             </li>
           </UlCompetence>
+        </div>
+        <div className='skills'>
+          <div className='hardSkills'>
+            <h2>FrontEnd</h2>
+            <hr />
+            <ul>
+              <li>Angular</li>
+              <li>React</li>
+              <li>CSS • LESS • SASS </li>
+            </ul>
+            <h2>backend</h2>
+            <hr />
+            <ul>
+              <li>Auth0</li>
+              <li>REST aPI</li>
+              <li>Database • sql • MangoDB </li>
+              <li>Nodejs • express • nextjs</li>
+            </ul>
+          </div>
+          <div className='softSkills'>
+            <h2>devops</h2>
+            <hr />
+            <ul>
+              <li>Proxmox</li>
+              <li>Docker</li>
+              <li>Heroku</li>
+              <li>GNU/Linux</li>
+            </ul>
+            <h2>Outils</h2>
+            <hr />
+            <ul>
+              <li>Vscode</li>
+              <li>Postman</li>
+              <li>Webpack</li>
+              <li>Git</li>
+              <li>notion.so</li>
+            </ul>
+          </div>
         </div>
         <div className='formations'>
           <h2>Formations</h2>
@@ -119,7 +166,7 @@ const IndexPage = () => {
           <hr />
           <ul>
             <li>
-              <span>2010 • présent</span>
+              <span>2020 • actuel</span>
               <div>
                 <p>
                   <b>Développeur</b> web et iot
@@ -128,7 +175,7 @@ const IndexPage = () => {
               </div>
             </li>
             <li>
-              <span>2020</span>
+              <span>2020 • actuel</span>
               <div>
                 <p>Micro-entreprise</p>
                 <i>LudoLoops • France</i> 🇫🇷
@@ -179,43 +226,45 @@ const IndexPage = () => {
               </div>
             </li>
           </ul>
-        </div>
-        <div className='skills'>
-          <div className='hardSkills'>
-            <h2>FrontEnd</h2>
-            <hr />
-            <ul>
-              <li>Angular</li>
-              <li>React</li>
-              <li>CSS • LESS • SASS </li>
-            </ul>
-            <h2>backend</h2>
-            <hr />
-            <ul>
-              <li>Auth0</li>
-              <li>REST aPI</li>
-              <li>Database • sql • MangoDB </li>
-              <li>Nodejs • express • nextjs</li>
-            </ul>
-          </div>
-          <div className='softSkills'>
-            <h2>devops</h2>
-            <hr />
-            <ul>
-              <li>Proxmox</li>
-              <li>Docker</li>
-              <li>Heroku</li>
-              <li>GNU/Linux</li>
-            </ul>
-            <h2>Outils</h2>
-            <hr />
-            <ul>
-              <li>Vscode</li>
-              <li>Postman</li>
-              <li>Webpack</li>
-              <li>Git</li>
-              <li>notion.so</li>
-            </ul>
+          <h2>intérêts et loisirs</h2>
+          <hr />
+          <div className='loisirs'>
+            <div className='espace'>
+              <img src={astronomie} alt='astronomie' />
+              <p>
+                <br />
+                espace
+              </p>
+            </div>
+            <div className='code'>
+              <img src={code} alt='code' />
+              <p>
+                <br />
+                code
+              </p>
+            </div>
+            <div className='moto'>
+              <img src={moto} alt='moto' />
+              <p>
+                <br />
+                moto
+              </p>
+            </div>
+            <div className='canada'>
+              <img src={canada} alt='canada flag' />
+
+              <p>
+                anglais <br />
+                CERCL C1
+              </p>
+            </div>
+            <div className='japon'>
+              <img src={japon} alt='japan flag' />
+              <p>
+                Japonais <br />
+                debutant
+              </p>
+            </div>
           </div>
         </div>
       </div>

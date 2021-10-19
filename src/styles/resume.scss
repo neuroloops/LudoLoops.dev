@@ -2,13 +2,14 @@
 
 h1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   font-size: 36px;
   color: var(--txt-resume);
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
+  margin-bottom: 0.3rem;
   & span {
     font-weight: 400;
   }
@@ -32,6 +33,7 @@ p {
     font-size: 2.125rem;
     font-size: 1.5rem;
     margin-top: 0.625rem;
+
     padding-right: 0;
   }
 }
@@ -46,8 +48,8 @@ ul {
 
 hr {
   margin-bottom: 0.75rem;
-  width: 5rem;
-  border: 0.2rem solid;
+  width: 3rem;
+  border: 0.1rem solid;
 }
 body {
   background-color: white;
@@ -55,26 +57,9 @@ body {
 .wrapper {
   display: grid;
   max-width: 1280px;
-  grid-template-rows: 1fr;
-  grid-template-columns: auto;
-  grid-template-areas:
-    'name'
-    'contact'
-    'photo'
-    'perso'
-    'competences'
-    'skills'
-    'formations';
+  display: flex;
+  flex-direction: column;
 
-  @include for-tablet-landscape-up {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      'photo name'
-      'contact competences'
-      'perso formations'
-      'skills formations';
-  }
   color: var(--txt-resume);
   & > * {
     padding: 1rem;
@@ -87,12 +72,11 @@ body {
 }
 
 .photo {
-  grid-area: photo;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   padding: 0;
-  margin-top: -50px;
+  margin-top: -40px;
   margin-bottom: -27px;
   z-index: 2;
   & img {
@@ -101,36 +85,42 @@ body {
 }
 
 .name {
-  grid-area: name;
   text-align: center;
 }
 
 .contact {
   padding: 1rem;
-  grid-area: contact;
+
   color: white;
   background-color: var(--txt-resume);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  line-height: 2rem;
   .extLink {
     width: 1.2rem;
   }
+
   a {
     color: white;
     text-decoration: none;
+    z-index: 2;
+  }
+  .city {
+    display: flex;
+    justify-content: space-between;
   }
   .logo {
     display: flex;
-    width: 65%;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
-  @include for-tablet-landscape-up {
-    padding: 4.75rem 1.25rem 0;
+  @include for-tablet-portrait-up {
+    flex-direction: row;
   }
 }
 
 .perso {
-  grid-area: perso;
   background-color: var(--txt-resume);
   padding: 2rem 1rem 2rem;
   color: white;
@@ -144,33 +134,42 @@ body {
 }
 
 .competences {
-  grid-area: competences;
 }
 
 .formations {
-  grid-area: formations;
+  li {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 1rem;
+  }
 }
 
 .skills {
-  grid-area: skills;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   background-color: var(--txt-resume);
   color: white;
-  & hr {
+  h2 {
+    margin-top: 1rem;
+  }
+  hr {
     background-color: white;
     color: white;
     border-color: white;
   }
-  @include for-tablet-landscape-up {
-    flex-direction: column;
-  }
 }
-
-.hide {
-  display: none;
-  @include for-tablet-landscape-up {
-    display: contents;
+.loisirs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  div {
+    align-self: flex-end;
+  }
+  p {
+    text-align: center;
+    text-transform: uppercase;
   }
 }

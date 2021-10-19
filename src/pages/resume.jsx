@@ -145,7 +145,7 @@ const IndexPage = () => {
             <hr />
             <ul>
               <li>
-                <span>2010 • présent</span>
+                <span>2020 • actuel</span>
                 <div>
                   <p>
                     <b>Développeur</b> web et iot
@@ -154,7 +154,7 @@ const IndexPage = () => {
                 </div>
               </li>
               <li>
-                <span>2020</span>
+                <span>2020 • actuel</span>
                 <div>
                   <p>Micro-entreprise</p>
                   <i>LudoLoops • France</i> 🇫🇷
