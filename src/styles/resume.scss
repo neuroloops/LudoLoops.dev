@@ -63,6 +63,9 @@ body {
   color: var(--txt-resume);
   & > * {
     padding: 1rem;
+    @include for-tablet-portrait-up {
+      padding: 2rem 3rem;
+    }
   }
   & hr {
     background-color: var(--txt-resume);
@@ -98,6 +101,9 @@ body {
   align-items: center;
   line-height: 2rem;
   gap: 1rem;
+  @include for-tablet-portrait-up {
+    justify-content: space-evenly;
+  }
   .extLink {
     width: 1.2rem;
   }
@@ -111,10 +117,17 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    @include for-tablet-portrait-up {
+      flex-direction: column;
+      width: fit-content;
+    }
   }
   .logo {
     display: flex;
     justify-content: space-between;
+    @include for-tablet-portrait-up {
+      justify-content: space-evenly;
+    }
   }
   @include for-tablet-portrait-up {
     flex-direction: row;
@@ -132,9 +145,6 @@ body {
     justify-content: space-around;
     gap: 0.5rem;
   }
-}
-
-.competences {
 }
 
 .formations {
@@ -160,6 +170,7 @@ body {
     border-color: white;
   }
 }
+
 .loisirs {
   display: flex;
   flex-wrap: wrap;
@@ -177,7 +188,7 @@ body {
 
 .competences {
   line-height: 1.75rem;
-  padding-left: 2.625rem;
+  // padding-left: 2.625rem;
   display: block !important;
   li {
     list-style-type: disc !important;
