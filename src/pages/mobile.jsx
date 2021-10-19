@@ -252,7 +252,6 @@ const IndexPage = () => {
             </div>
             <div className='canada'>
               <img src={canada} alt='canada flag' />
-
               <p>
                 anglais <br />
                 CERCL C1
@@ -261,8 +260,9 @@ const IndexPage = () => {
             <div className='japon'>
               <img src={japon} alt='japan flag' />
               <p>
-                Japonais <br />
-                debutant
+                Japonais
+                <br />
+                débutant
               </p>
             </div>
           </div>
