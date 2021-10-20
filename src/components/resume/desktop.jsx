@@ -5,6 +5,12 @@ import '../../styles/resume.scss'
 
 import myPic from '../../assets/images/Ludo_with_logo.png'
 import ExtLink from '../../assets/svg/extLink'
+import astronomie from '../../assets/svg/astronomie.svg'
+import code from '../../assets/svg/code.svg'
+import cuisine from '../../assets/svg/cuisine.svg'
+import moto from '../../assets/svg/moto.svg'
+import canada from '../../assets/svg/canada.svg'
+import japon from '../../assets/svg/japon.svg'
 
 const Desktop = () => {
   console.log('where are on desktop')
@@ -32,6 +38,11 @@ const Desktop = () => {
             <li>
               <a href='mailto:ludoloops@protonmail.com'>
                 ludoloops@protonmail.com <ExtLink className='extLink' />
+              </a>
+            </li>
+            <li>
+              <a href='tel:+33668196384'>
+                06.68.19.63.84 <ExtLink className='extLink' />
               </a>
             </li>
             <li>
@@ -211,6 +222,57 @@ const Desktop = () => {
               </div>
             </li>
           </ul>
+          <h2>intérêts et loisirs</h2>
+          <hr />
+          <div className='loisirs'>
+            <div className='espace'>
+              <img src={astronomie} alt='astronomie' />
+              <p>
+                <br />
+                espace
+              </p>
+            </div>
+
+            <div className='cuisine'>
+              <img src={cuisine} alt='cuisine' />
+              <p>
+                <br />
+                cuisine
+              </p>
+            </div>
+            <div className='moto'>
+              <img src={moto} alt='moto' />
+              <p>
+                <br />
+                moto
+              </p>
+            </div>
+
+            <div className='code'>
+              <img src={code} alt='code' />
+              <p>
+                <br />
+                code
+              </p>
+            </div>
+          </div>
+          <div className='loisirs'>
+            <div className='canada'>
+              <img src={canada} alt='canada flag' />
+              <p>
+                anglais <br />
+                CERCL C1
+              </p>
+            </div>
+            <div className='japon'>
+              <img src={japon} alt='japan flag' />
+              <p>
+                Japonais
+                <br />
+                débutant
+              </p>
+            </div>
+          </div>
         </Section>
       </Main>
     </Wrapper>
@@ -299,6 +361,7 @@ const Aside = styled.aside`
   li {
     padding-left: 1.375rem;
     text-transform: capitalize;
+    line-height: 3rem;
   }
   hr {
     background-color: white;
