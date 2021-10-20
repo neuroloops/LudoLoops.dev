@@ -10,7 +10,12 @@ const Resume = () => {
   const isMobile = useMediaQuery({ query: `(max-width: 1024px)` })
 
   console.log(isMobile)
-  return <Layout> {isMobile ? <Mobile /> : <Desktop />} </Layout>
+  return (
+    <Layout>
+      <Mobile />
+      {/* {isMobile ? <Mobile /> : <Desktop />}  */}
+    </Layout>
+  )
 }
 
 export default Resume
