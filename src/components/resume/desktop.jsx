@@ -242,7 +242,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Header = styled.header`
+const Header = styled.div`
   display: flex;
   padding-top: 4.5rem;
 
