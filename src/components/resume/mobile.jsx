@@ -112,7 +112,7 @@ const IndexPage = () => {
           <hr />
           <ul>
             <li>Auth0</li>
-            <li>REST aPI</li>
+            <li>REST API</li>
             <li>Database • sql • MangoDB </li>
             <li>Nodejs • express • nextjs</li>
           </ul>
@@ -137,62 +137,95 @@ const IndexPage = () => {
           </ul>
         </div>
       </div>
-      <Formations />
-      <ExpPro />
+      <YearList title='formations' data={formations} />
+      <YearList title='Expériences professionnelles' data={expPro} />
+      <h2>intérêts et loisirs</h2>
+      <hr />
+      <div className='loisirs'>
+        <div className='espace'>
+          <img src={astronomie} alt='astronomie' />
+          <p>
+            <br />
+            espace
+          </p>
+        </div>
+
+        <div className='cuisine'>
+          <img src={cuisine} alt='cuisine' />
+          <p>
+            <br />
+            cuisine
+          </p>
+        </div>
+        <div className='moto'>
+          <img src={moto} alt='moto' />
+          <p>
+            <br />
+            moto
+          </p>
+        </div>
+      </div>
+      <div className='loisirs'>
+        <div className='code'>
+          <img src={code} alt='code' />
+          <p>
+            <br />
+            code
+          </p>
+        </div>
+        <div className='canada'>
+          <img src={canada} alt='canada flag' />
+          <p>
+            anglais <br />
+            CERCL C1
+          </p>
+        </div>
+        <div className='japon'>
+          <img src={japon} alt='japan flag' />
+          <p>
+            Japonais
+            <br />
+            débutant
+          </p>
+        </div>
+      </div>
     </div>
   )
 }
 
 export default IndexPage
 
-function Formations() {
+const YearList = props => {
+  const { title, data } = props
   return (
     <section className='formations'>
-      <h2>formations</h2>
+      <h2>{title}</h2>
       <hr />
       <ul>
-        {formations.map(formation => {
-          return (
-            <li>
-              <span>{formation.year}</span>
-              <div>
-                <p>{formation.title}</p>
-                <i>{formation.description}</i>
-              </div>
-            </li>
-          )
+        {data.map((item, index) => {
+          return <ListItem key={index} {...item} />
         })}
       </ul>
     </section>
   )
 }
 
-function ExpPro() {
+const ListItem = ({ year, title, description }) => {
   return (
-    <div className='formations'>
-      <h2>Expériences professionnelles</h2>
-      <hr />
-      <ul>
-        {expPro.map(exp => {
-          return (
-            <li>
-              <span>{exp.year}</span>
-              <div>
-                <p>{exp.title}</p>
-                <i>{exp.description}</i>
-              </div>
-            </li>
-          )
-        })}
-      </ul>
-    </div>
+    <li>
+      <span>{year}</span>
+      <div>
+        <p>{title}</p>
+        <i>{description}</i>
+      </div>
+    </li>
   )
 }
 
 const formations = [
   {
     year: 2021,
-    title: '<b>Développeur Web</b> - RNCP 3 (Bac+2)',
+    title: `<b>Développeur Web</b> - RNCP 3 (Bac+2)`,
     description: 'openClassrooms - France - e-learning',
   },
   {
@@ -202,7 +235,7 @@ const formations = [
   },
   {
     year: 2016,
-    title: ' introduction to <b>cyber security</b>',
+    title: 'introduction to <b>cyber security</b>',
     description: 'The open University - e-learning',
   },
 ]
