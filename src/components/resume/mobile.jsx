@@ -11,9 +11,12 @@ import cuisine from '../../assets/svg/cuisine.svg'
 import moto from '../../assets/svg/moto.svg'
 import canada from '../../assets/svg/canada.svg'
 import japon from '../../assets/svg/japon.svg'
+import images from '../../assets/images'
 
 const IndexPage = () => {
   console.log('where are on Mobile')
+  // console.table(images)
+
   return (
     <div className='wrapper'>
       <div className='name'>
@@ -48,7 +51,7 @@ const IndexPage = () => {
               target='_blank'
               title='github'
             >
-              <img src={github} alt='github logo' />
+              {/* <img src={images[`${code}.svg`].default} alt='github logo' /> */}
             </a>
             <a
               href='https://www.linkedin.com/in/ludovic-dumas'
@@ -134,154 +137,110 @@ const IndexPage = () => {
           </ul>
         </div>
       </div>
-      <div className='formations'>
-        <h2>Formations</h2>
-        <hr />
-        <ul>
-          <li>
-            <span>2021</span>
-            <div>
-              <p>
-                <b>Développeur Web</b> - RNCP 3 (Bac+2)
-              </p>
-              <i>openClassrooms - France - e-learning</i>
-            </div>
-          </li>
-          <li>
-            <span>2019</span>
-            <div>
-              <p>CS50 computer Science</p>
-              <i>Harvard - e-learning</i>
-            </div>
-          </li>
-          <li>
-            <span>2016</span>
-            <div>
-              <p>
-                introduction to <b>cyber security</b>
-              </p>
-              <i>The open University - e-learning</i>
-            </div>
-          </li>
-          <li></li>
-        </ul>
-        <h2>Expériences professionnelles</h2>
-        <hr />
-        <ul>
-          <li>
-            <span>2020 • actuel</span>
-            <div>
-              <p>
-                <b>Développeur</b> web et iot
-              </p>
-              <i>Incom Delta • France</i> 🇫🇷
-            </div>
-          </li>
-          <li>
-            <span>2020 • actuel</span>
-            <div>
-              <p>Micro-entreprise</p>
-              <i>LudoLoops • France</i> 🇫🇷
-            </div>
-          </li>
-          <li>
-            <span>2017 • 2018</span>
-            <div>
-              <p>
-                Responsable de ferme de <b>crypto-monnaie</b>
-              </p>
-              <i>St-Sauver • Canada</i> 🇨🇦
-            </div>
-          </li>
-          <li>
-            <span>2013 • 2017</span>
-            <div>
-              <p>
-                <b>Technicien </b>
-                informatique et électronique
-              </p>
-              <i>ThoughtTechnologie, Montréal • Canada</i> 🇨🇦
-            </div>
-          </li>
-          <li>
-            <span>2010 • 2013</span>
-            <div>
-              <p>
-                <b>Vendeur </b>- spécialise en électronique
-              </p>
-              <i>La Source, Montréal et Vancouver • Canada</i> 🇨🇦
-            </div>
-          </li>
-          <li>
-            <span>2009 • 2010</span>
-            <div>
-              <p>Commis à l'inventaire</p>
-              <i>Dollarama, Montréal • Canada</i> 🇨🇦
-            </div>
-          </li>
-          <li>
-            <span>2006 • 2009</span>
-            <div>
-              <p>
-                Technicien en <b>Télécommunications</b>
-              </p>
-              <i>Armée de l’air, Varennes sur allier • France</i> 🇫🇷
-            </div>
-          </li>
-        </ul>
-        <h2>intérêts et loisirs</h2>
-        <hr />
-        <div className='loisirs'>
-          <div className='espace'>
-            <img src={astronomie} alt='astronomie' />
-            <p>
-              <br />
-              espace
-            </p>
-          </div>
-
-          <div className='cuisine'>
-            <img src={cuisine} alt='cuisine' />
-            <p>
-              <br />
-              cuisine
-            </p>
-          </div>
-          <div className='moto'>
-            <img src={moto} alt='moto' />
-            <p>
-              <br />
-              moto
-            </p>
-          </div>
-        </div>
-        <div className='loisirs'>
-          <div className='code'>
-            <img src={code} alt='code' />
-            <p>
-              <br />
-              code
-            </p>
-          </div>
-          <div className='canada'>
-            <img src={canada} alt='canada flag' />
-            <p>
-              anglais <br />
-              CERCL C1
-            </p>
-          </div>
-          <div className='japon'>
-            <img src={japon} alt='japan flag' />
-            <p>
-              Japonais
-              <br />
-              débutant
-            </p>
-          </div>
-        </div>
-      </div>
+      <Formations />
+      <ExpPro />
     </div>
   )
 }
 
 export default IndexPage
+
+function Formations() {
+  return (
+    <section className='formations'>
+      <h2>formations</h2>
+      <hr />
+      <ul>
+        {formations.map(formation => {
+          return (
+            <li>
+              <span>{formation.year}</span>
+              <div>
+                <p>{formation.title}</p>
+                <i>{formation.description}</i>
+              </div>
+            </li>
+          )
+        })}
+      </ul>
+    </section>
+  )
+}
+
+function ExpPro() {
+  return (
+    <div className='formations'>
+      <h2>Expériences professionnelles</h2>
+      <hr />
+      <ul>
+        {expPro.map(exp => {
+          return (
+            <li>
+              <span>{exp.year}</span>
+              <div>
+                <p>{exp.title}</p>
+                <i>{exp.description}</i>
+              </div>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
+  )
+}
+
+const formations = [
+  {
+    year: 2021,
+    title: '<b>Développeur Web</b> - RNCP 3 (Bac+2)',
+    description: 'openClassrooms - France - e-learning',
+  },
+  {
+    year: 2019,
+    title: 'CS50 computer Science',
+    description: 'Harvard - e-learning',
+  },
+  {
+    year: 2016,
+    title: ' introduction to <b>cyber security</b>',
+    description: 'The open University - e-learning',
+  },
+]
+
+const expPro = [
+  {
+    year: '2020 • actuel',
+    title: '<b>Développeur</b> web et iot',
+    description: 'Incom Delta • France',
+  },
+  {
+    year: '2020 • actuel',
+    title: 'Micro-entreprise',
+    description: 'LudoLoops • France',
+  },
+  {
+    year: '2017 • 2018',
+    title: 'Responsable de ferme de <b>crypto-monnaie</b>',
+    description: 'St-Sauver • Canada',
+  },
+  {
+    year: '2013 • 2017',
+    title: '<b>Technicien </b> informatique et électronique',
+    description: 'ThoughtTechnologie, Montréal • Canada',
+  },
+  {
+    year: '2010 • 2013',
+    title: '<b>Vendeur </b>- spécialise en électronique',
+    description: 'La Source, Montréal et Vancouver • Canada',
+  },
+  {
+    year: '2009 • 2010',
+    title: "Commis à l'inventaire",
+    description: 'Dollarama, Montréal • Canada',
+  },
+  {
+    year: '2006 • 2009',
+    title: 'Technicien en <b>Télécommunications</b>',
+    description: 'Armée de l’air, Varennes sur allier • France',
+  },
+]

@@ -23,6 +23,11 @@ const Links = () => {
           Contacts
         </Link>
       </li>
+      <li>
+        <Link to='/resume' className='page-link'>
+          CV
+        </Link>
+      </li>
     </ul>
   )
 }
