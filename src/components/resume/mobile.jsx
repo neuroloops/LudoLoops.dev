@@ -12,10 +12,11 @@ import moto from '../../assets/svg/moto.svg'
 import canada from '../../assets/svg/canada.svg'
 import japon from '../../assets/svg/japon.svg'
 import images from '../../assets/images'
+import { formations } from './data/formations'
+import { expPro } from './data/expPro'
 
 const IndexPage = () => {
   console.log('where are on Mobile')
-  // console.table(images)
 
   return (
     <div className='wrapper'>
@@ -221,59 +222,3 @@ const ListItem = ({ year, title, description }) => {
     </li>
   )
 }
-
-const formations = [
-  {
-    year: 2021,
-    title: `<b>Développeur Web</b> - RNCP 3 (Bac+2)`,
-    description: 'openClassrooms - France - e-learning',
-  },
-  {
-    year: 2019,
-    title: 'CS50 computer Science',
-    description: 'Harvard - e-learning',
-  },
-  {
-    year: 2016,
-    title: 'introduction to <b>cyber security</b>',
-    description: 'The open University - e-learning',
-  },
-]
-
-const expPro = [
-  {
-    year: '2020 • actuel',
-    title: '<b>Développeur</b> web et iot',
-    description: 'Incom Delta • France',
-  },
-  {
-    year: '2020 • actuel',
-    title: 'Micro-entreprise',
-    description: 'LudoLoops • France',
-  },
-  {
-    year: '2017 • 2018',
-    title: 'Responsable de ferme de <b>crypto-monnaie</b>',
-    description: 'St-Sauver • Canada',
-  },
-  {
-    year: '2013 • 2017',
-    title: '<b>Technicien </b> informatique et électronique',
-    description: 'ThoughtTechnologie, Montréal • Canada',
-  },
-  {
-    year: '2010 • 2013',
-    title: '<b>Vendeur </b>- spécialise en électronique',
-    description: 'La Source, Montréal et Vancouver • Canada',
-  },
-  {
-    year: '2009 • 2010',
-    title: "Commis à l'inventaire",
-    description: 'Dollarama, Montréal • Canada',
-  },
-  {
-    year: '2006 • 2009',
-    title: 'Technicien en <b>Télécommunications</b>',
-    description: 'Armée de l’air, Varennes sur allier • France',
-  },
-]
