@@ -12,8 +12,8 @@ import moto from '../../assets/svg/moto.svg'
 import canada from '../../assets/svg/canada.svg'
 import japon from '../../assets/svg/japon.svg'
 import images from '../../assets/images'
-import { formations } from './data/formations'
-import { expPro } from './data/expPro'
+import formations from './data/formations'
+import expPro from './data/expPro'
 
 const IndexPage = () => {
   console.log('where are on Mobile')

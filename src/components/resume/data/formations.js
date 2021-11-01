@@ -1,4 +1,4 @@
-export const formations = [
+const formations = [
   {
     year: 2021,
     title: `<b>Développeur Web</b> - RNCP 3 (Bac+2)`,
@@ -15,3 +15,4 @@ export const formations = [
     description: 'The open University - e-learning',
   },
 ]
+export default formations

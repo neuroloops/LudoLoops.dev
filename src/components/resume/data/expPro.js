@@ -1,4 +1,4 @@
-export const expPro = [
+const expPro = [
   {
     year: '2020 • actuel',
     title: '<b>Développeur</b> web et iot',
@@ -35,3 +35,5 @@ export const expPro = [
     description: 'Armée de l’air, Varennes sur allier • France',
   },
 ]
+
+export default expPro
