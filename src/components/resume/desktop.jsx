@@ -85,7 +85,7 @@ const Desktop = () => {
           <ul>
             <li>Auth0</li>
             <li>REST aPI</li>
-            <li>Database • sql • MangoDB </li>
+            <li>Database • sql • MongoDB </li>
             <li>Nodejs • express • nextjs</li>
           </ul>
           <h2>devops</h2>
