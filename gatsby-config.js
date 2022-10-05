@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://ludoloops.dev`
   },
   plugins: ["gatsby-plugin-mdx", {
     resolve: 'gatsby-source-filesystem',
@@ -10,4 +10,4 @@ module.exports = {
     },
     __key: "pages"
   }]
-};
+}
