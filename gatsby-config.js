@@ -6,7 +6,7 @@ module.exports = {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "pages",
-      "path": "./src/pages/"
+      "path": "./src/mdx/"
     },
     __key: "pages"
   }]
