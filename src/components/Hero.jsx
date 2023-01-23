@@ -64,8 +64,4 @@ const Section = styled.section`
 const Button = styled.div`
   background-color: var(--white);
   color: var(--txt-btn-dark);
-  font-size: 14px;
-  font-weight: var(--semiBold);
-  padding: 20px 80px;
-  width: fit-content;
 `

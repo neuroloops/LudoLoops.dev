@@ -8,10 +8,11 @@ body {
   --white-dark: #f4f4f4;
   --txt-btn-dark: #020244;
   --txt-dark: #202020;
+  --bg-footer: #0b0b0b;
   --bold: 700;
   --semiBold: 600;
   --extraBold: 800;
-  --black: 900;
+  --fontBlack: 900;
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
@@ -19,6 +20,7 @@ body {
 ul {
   list-style-type: none;
 }
+
 .bg-blue {
   background-color: var(--ll-blue);
 }
@@ -33,4 +35,9 @@ ul {
 
 .btn {
   border-radius: 68px;
+  font-size: 14px;
+  font-weight: var(--semiBold);
+  padding: 20px 80px;
+  width: fit-content;
+  cursor: pointer;
 }
