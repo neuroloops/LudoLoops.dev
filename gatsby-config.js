@@ -9,5 +9,5 @@ module.exports = {
       "path": "./src/mdx/"
     },
     __key: "pages"
-  }]
+  }, 'gatsby-plugin-emotion']
 }
