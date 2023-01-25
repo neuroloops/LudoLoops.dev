@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-const Hero = ({ mdx }) => {
+const Hero = () => {
   return (
     <Bg>
       <Section className="section">
