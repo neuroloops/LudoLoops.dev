@@ -22,16 +22,38 @@ ul {
   list-style-type: none;
 }
 
-.bg-blue {
-  background-color: var(--ll-blue);
+@mixin bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
+.bg--white {
+  @include bg;
+  background-color: var(--white);
+  border: 1px solid green;
+}
+
+.bg--blue {
+  @include bg;
+  background-color: var(--ll-blue);
+  border: 1px solid green;
+}
+
+// .bg-blue {
+//   background-color: var(--ll-blue);
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+// }
 
 .section {
   display: flex;
-  max-width: 1400px;
+  flex-wrap: wrap;
+  max-width: 1200px;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  // border: 1px solid orange;
 }
 
 .btn {

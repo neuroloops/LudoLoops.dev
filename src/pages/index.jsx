@@ -1,7 +1,7 @@
 import React from "react"
-import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
-import "../styles/global.css"
+import "../styles/global.scss"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
@@ -13,7 +13,7 @@ import Header from "../components/Header"
 
 const IndexPage = () => {
   return (
-    <Wrapper>
+    <div>
       <Header />
       <Navbar />
       <Hero />
@@ -21,16 +21,15 @@ const IndexPage = () => {
       <Skills />
       <Projects />
       <Demo />
-
       <Footer />
-    </Wrapper>
+    </div>
   )
 }
 
 export default IndexPage
 
-const Wrapper = styled.div`
-  /* display: flex;
+const wrapper = css`
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
 `

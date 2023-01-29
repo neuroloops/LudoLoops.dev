@@ -1,16 +1,19 @@
 import React from "react"
-import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
-const About = ({ mdx }) => {
+const About = () => {
   return (
-    <Bg>
-      <Section className="section">
-        <Wrapper>
+    <div className="bg--white">
+      <section
+        className="section"
+        css={section}
+      >
+        <div css={wrapper}>
           <img
             src={"/Ludo_with_logo.png"}
             alt="Ludovic Dumas profil"
           />
-          <Text>
+          <div css={text}>
             <h2>
               <span> Hello, my name is</span> <br /> Ludovic Dumas
             </h2>
@@ -21,29 +24,24 @@ const About = ({ mdx }) => {
               international perspective and a curiosity for emerging
               technologies such as OpenAI and ChatGPT.
             </p>
-          </Text>
-        </Wrapper>
-      </Section>
-    </Bg>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
 
 export default About
 
-const Bg = styled.div`
-  background-color: var(--white);
-  width: 100%;
-`
-
-const Section = styled.section`
+const section = css`
   color: var(--txt-dark);
 `
 
-const Wrapper = styled.div`
+const wrapper = css`
   display: flex;
 `
 
-const Text = styled.div`
+const text = css`
   background-color: var(--white-dark);
   width: 750px;
   h2 {
