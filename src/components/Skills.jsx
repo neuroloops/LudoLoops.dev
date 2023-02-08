@@ -47,5 +47,8 @@ const layout = css`
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 26px 30px;
+  height: 1027px;
+  align-content: center;
+  justify-content: center;
 `
