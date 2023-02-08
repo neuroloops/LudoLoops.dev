@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { css } from "@emotion/react"
 
-export const Navbar = ({ mdx }) => {
+const Navbar = () => {
   return (
     <Wrapper className="bg-blue">
       <img
@@ -22,9 +21,10 @@ export const Navbar = ({ mdx }) => {
     </Wrapper>
   )
 }
+export default Navbar
 
 const Wrapper = styled.div`
-  background-color: var(--ll-blue);
+  background-color: #142345;
   font-size: 13px;
   font-weight: bold;
   display: flex;

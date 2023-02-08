@@ -1,54 +1,20 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# My Gatsby Portfolio
 
-## 🚀 Quick start
+This is my portfolio built with Gatsby.js. Gatsby is a powerful and easy-to-use framework for creating websites and apps. I have used Gatsby to create a portfolio that showcases my work.
 
-1.  **Create a Gatsby site.**
+This portfolio includes:
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- A home page that serves as an introduction to me and my skills
+- A page that showcases my projects
+- A contact page so that potential employers can get in touch with me
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+I have also included some other features such as:
 
-2.  **Start developing.**
+- Social media links so that employers can get an insight into my personality
+- A contact form so that employers can easily contact me
 
-    Navigate into your new site’s directory and start it up.
+By using Gatsby, I have been able to create a website that is fast, secure and easy to maintain. I can easily add new content and keep my portfolio up to date.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+If you are interested in seeing my portfolio, please visit the link below. I hope you like it!
 
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Link: [ludoloops.dev](https://ludoloops.dev)

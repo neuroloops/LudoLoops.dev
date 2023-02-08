@@ -1,10 +1,13 @@
 import React from "react"
-import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
-const Hero = ({ mdx }) => {
+const Hero = () => {
   return (
-    <Bg>
-      <Section className="section">
+    <div className="bg--blue">
+      <section
+        className="section"
+        css={section}
+      >
         <div>
           <h1>
             LudoLoops <br />
@@ -17,7 +20,12 @@ const Hero = ({ mdx }) => {
             <li>Devops</li>
             <li>tools</li>
           </ul>
-          <Button className="btn">contact with me</Button>
+          <div
+            className="btn"
+            css={button}
+          >
+            contact with me
+          </div>
         </div>
         <div>
           <img
@@ -25,19 +33,14 @@ const Hero = ({ mdx }) => {
             alt=""
           />
         </div>
-      </Section>
-    </Bg>
+      </section>
+    </div>
   )
 }
 
 export default Hero
 
-const Bg = styled.div`
-  background-color: var(--ll-blue);
-  width: 100%;
-`
-
-const Section = styled.section`
+const section = css`
   color: var(--white);
   h1 {
     font-size: 48px;
@@ -61,7 +64,7 @@ const Section = styled.section`
   }
 `
 
-const Button = styled.div`
+const button = css`
   background-color: var(--white);
   color: var(--txt-btn-dark);
 `

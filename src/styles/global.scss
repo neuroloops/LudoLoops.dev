@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 
 body {
-  --ll-blue: #03035f;
+  --ll-blue: #0c162d;
   --teal-dark: #42e8e0;
   --teal: #01fef0;
   --white: white;
@@ -21,16 +21,31 @@ ul {
   list-style-type: none;
 }
 
-.bg-blue {
+@mixin bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bg--white {
+  @include bg;
+  background-color: var(--white);
+  color: var(--txt-dark);
+}
+
+.bg--blue {
+  @include bg;
   background-color: var(--ll-blue);
+  color: var(--white);
 }
 
 .section {
   display: flex;
-  max-width: 1400px;
+  flex-wrap: wrap;
+  max-width: 1200px;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  // border: 1px solid orange;
 }
 
 .btn {
@@ -40,4 +55,13 @@ ul {
   padding: 20px 80px;
   width: fit-content;
   cursor: pointer;
+}
+.imgContainer {
+  // width: 100%;
+  // height: auto;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 36px;
 }
