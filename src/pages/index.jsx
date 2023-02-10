@@ -27,9 +27,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-const wrapper = css`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
