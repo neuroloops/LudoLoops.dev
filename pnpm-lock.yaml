@@ -8,6 +8,7 @@ specifiers:
   eslint-plugin-react: ^7.32.2
   gatsby: ^5.6.0
   gatsby-plugin-emotion: ^8.6.0
+  gatsby-plugin-netlify: ^5.1.0
   gatsby-plugin-pnpm: ^1.2.10
   gatsby-plugin-sass: ^6.6.0
   gatsby-source-filesystem: ^5.6.0
@@ -32,6 +33,7 @@ devDependencies:
   '@emotion/eslint-plugin': 11.10.0_eslint@8.34.0
   eslint: 8.34.0
   eslint-plugin-react: 7.32.2_eslint@8.34.0
+  gatsby-plugin-netlify: 5.1.0_gatsby@5.6.0
   gatsby-plugin-pnpm: 1.2.10_gatsby@5.6.0
 
 packages:
@@ -5131,6 +5133,15 @@ packages:
   /fs-exists-cached/1.0.0:
     resolution: {integrity: sha512-kSxoARUDn4F2RPXX48UXnaFKwVU7Ivd/6qpzZL29MCDmr9sTvybv4gFCp+qaI4fM9m0z9fgz/yJvi56GAz+BZg==}
 
+  /fs-extra/10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /fs-extra/11.1.0:
     resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
     engines: {node: '>=14.14'}
@@ -5322,6 +5333,23 @@ packages:
       '@emotion/react': 11.10.5_react@18.2.0
       gatsby: 5.6.0_biqbaboplfbrettd7655fr4n2y
     dev: false
+
+  /gatsby-plugin-netlify/5.1.0_gatsby@5.6.0:
+    resolution: {integrity: sha512-L2OPGYpjp6auXzntbQi3PveQ5433w6YFLb5MKDLwYaC9SdC4myLZStCMdHTMLzfcc2x9iLhA+XNkUNxC9OiUXw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      gatsby: ^4.0.0 || ^5.0.0
+    dependencies:
+      '@babel/runtime': 7.20.13
+      fs-extra: 10.1.0
+      gatsby: 5.6.0_biqbaboplfbrettd7655fr4n2y
+      gatsby-core-utils: 4.6.0
+      kebab-hash: 0.1.2
+      lodash.mergewith: 4.6.2
+      webpack-assets-manifest: 5.1.0
+    transitivePeerDependencies:
+      - webpack
+    dev: true
 
   /gatsby-plugin-page-creator/5.6.0_zkkghyhtn6tm3vxshkzxc572am:
     resolution: {integrity: sha512-WSCyxoAuF4DMBOPJfQpQzmq99nR3hVZBeKa0uWmFbSePouwtJ3tJadurNGgP5mzsG73HyKbwXPEcYHQy+LtrSg==}
@@ -6480,6 +6508,12 @@ packages:
       array-includes: 3.1.6
       object.assign: 4.1.4
 
+  /kebab-hash/0.1.2:
+    resolution: {integrity: sha512-BTZpq3xgISmQmAVzkISy4eUutsUA7s4IEFlCwOBJjvSFOwyR7I+fza+tBc/rzYWK/NrmFHjfU1IhO3lu29Ib/w==}
+    dependencies:
+      lodash.kebabcase: 4.1.1
+    dev: true
+
   /keyv/4.5.2:
     resolution: {integrity: sha512-5MHbFaKn8cNSmVW7BYnijeAVlE4cYA/SVkifVgrh7yotnfhKmjuXpDKjrABLnT0SfHWV21P8ow07OGfRrNDg8g==}
     dependencies:
@@ -6606,6 +6640,12 @@ packages:
   /lock/1.1.0:
     resolution: {integrity: sha512-NZQIJJL5Rb9lMJ0Yl1JoVr9GSdo4HTPsUEWsSFzB8dE8DSoiLCVavWZPi7Rnlv/o73u6I24S/XYc/NmG4l8EKA==}
 
+  /lockfile/1.0.4:
+    resolution: {integrity: sha512-cvbTwETRfsFh4nHsL1eGWapU1XFi5Ot9E85sWAwia7Y7EgB7vfqcZhTKZ+l7hCGxSPoushMv5GKhT5PdLv03WA==}
+    dependencies:
+      signal-exit: 3.0.7
+    dev: true
+
   /lodash.clonedeep/4.5.0:
     resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
 
@@ -6628,6 +6668,14 @@ packages:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
     dev: true
 
+  /lodash.has/4.5.2:
+    resolution: {integrity: sha512-rnYUdIo6xRCJnQmbVFEwcxF144erlD+M3YcJUVesflU9paQaE8p+fJDcIQrlMYbxoANFL+AB9hZrzSBBk5PL+g==}
+    dev: true
+
+  /lodash.kebabcase/4.1.1:
+    resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
+    dev: true
+
   /lodash.map/4.6.0:
     resolution: {integrity: sha512-worNHGKLDetmcEYDvh2stPCrrQRkP20E4l0iIS7F8EvzMqBBi7ltvFN5m1HvTf1P7Jk1txKhvFcmYsCr8O2F1Q==}
 
@@ -6639,6 +6687,10 @@ packages:
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+
+  /lodash.mergewith/4.6.2:
+    resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+    dev: true
 
   /lodash.truncate/4.4.2:
     resolution: {integrity: sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==}
@@ -9126,6 +9178,21 @@ packages:
 
   /webidl-conversions/3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+
+  /webpack-assets-manifest/5.1.0:
+    resolution: {integrity: sha512-kPuTMEjBrqZQVJ5M6yXNBCEdFbQQn7p+loNXt8NOeDFaAbsNFWqqwR0YL1mfG5LbwhK5FLXWXpuK3GuIIZ46rg==}
+    engines: {node: '>=10.13.0'}
+    peerDependencies:
+      webpack: ^5.2.0
+    dependencies:
+      chalk: 4.1.2
+      deepmerge: 4.3.0
+      lockfile: 1.0.4
+      lodash.get: 4.4.2
+      lodash.has: 4.5.2
+      schema-utils: 3.1.1
+      tapable: 2.2.1
+    dev: true
 
   /webpack-dev-middleware/4.3.0_webpack@5.75.0:
     resolution: {integrity: sha512-PjwyVY95/bhBh6VUqt6z4THplYcsvQ8YNNBTBM873xLVmw8FLeALn0qurHbs9EmcfhzQis/eoqypSnZeuUz26w==}

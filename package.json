@@ -30,6 +30,7 @@
     "@emotion/eslint-plugin": "^11.10.0",
     "eslint": "^8.34.0",
     "eslint-plugin-react": "^7.32.2",
+    "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-pnpm": "^1.2.10"
   }
 }
