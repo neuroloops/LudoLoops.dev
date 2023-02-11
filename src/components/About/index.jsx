@@ -1,19 +1,26 @@
 import React from "react"
-import { css } from "@emotion/react"
+import { style } from "./style"
+import Card from "./Card"
+import offering from "./offer.json"
 
 const About = () => {
   return (
     <div className="bg--white">
       <section
         className="section"
-        css={section}
+        css={style.section}
       >
-        <div css={wrapper}>
+        <div css={style.imgCtn}>
           <img
-            src={"/Ludo_with_logo.png"}
+            src={"/about/Ludo_with_logo.png"}
             alt="Ludovic Dumas profil"
           />
-          <div css={text}>
+        </div>
+        <div css={style.rightCtn}>
+          <div
+            css={style.aboutMe}
+            className="aboutMe"
+          >
             <h2>
               <span> Hello, my name is</span> <br /> Ludovic Dumas
             </h2>
@@ -25,6 +32,14 @@ const About = () => {
               technologies such as OpenAI and ChatGPT.
             </p>
           </div>
+          <div css={style.offer}>
+            <h2>what can I offer</h2>
+            <div css={style.cards}>
+              {offering.map(item => {
+                return <Card item={item} />
+              })}
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -32,26 +47,3 @@ const About = () => {
 }
 
 export default About
-
-const section = css`
-  color: var(--txt-dark);
-`
-
-const wrapper = css`
-  display: flex;
-`
-
-const text = css`
-  background-color: var(--white-dark);
-  width: 750px;
-  h2 {
-    font-weight: 800;
-    font-size: 36px;
-    span {
-      font-size: 18px;
-    }
-  }
-  p {
-    font-size: 14px;
-  }
-`
