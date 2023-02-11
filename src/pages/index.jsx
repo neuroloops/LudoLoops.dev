@@ -1,9 +1,8 @@
 import React from "react"
-import { css } from "@emotion/react"
 
 import "../styles/global.scss"
 import Footer from "../components/Footer"
-import Hero from "../components/Hero"
+import Hero from "../components/Hero/"
 import Navbar from "../components/Navbar"
 import About from "../components/About"
 import Demo from "../components/Demo"

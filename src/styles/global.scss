@@ -42,10 +42,9 @@ ul {
 .section {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1900px;
   align-items: center;
   justify-content: center;
-  // border: 1px solid orange;
 }
 
 .btn {
@@ -56,6 +55,7 @@ ul {
   width: fit-content;
   cursor: pointer;
 }
+
 .imgContainer {
   width: 100%;
   height: auto;
