@@ -6,10 +6,6 @@ export const style = {
     padding-top: 117px;
   `,
 
-  section: css`
-    color: var(--white);
-  `,
-
   bgColor: css`
     background: linear-gradient(180deg, #03035f 0%, #02023b 100%);
     height: 670px;
@@ -36,10 +32,12 @@ export const style = {
 
   section: css`
     position: absolute;
-    top: 0;
+    width: 100%;
+    max-width: 1900px !important;
+    top: 90px;
     color: var(--white);
-    margin-left: 397px;
-    margin-top: 90px;
+    padding-left: 1.25rem;
+
     h1 {
       font-size: 48px;
       font-weight: var(--bold);
@@ -60,5 +58,8 @@ export const style = {
         }
       }
     }
+  `,
+  composition: css`
+    width: 46vw;
   `,
 }

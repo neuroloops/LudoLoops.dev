@@ -1,5 +1,4 @@
 import React from "react"
-// import "./hero.module.scss"
 import { style } from "./style"
 
 const Hero = () => {
@@ -49,6 +48,7 @@ const Hero = () => {
             <img
               src={"/hero/composition.svg"}
               alt=""
+              css={style.composition}
             />
           </div>
         </section>
