@@ -1,6 +1,6 @@
 import React from "react"
 import { css } from "@emotion/react"
-import Card from "./skills/Card"
+import Card from "./Card"
 
 const Skills = () => {
   const frontend = {
