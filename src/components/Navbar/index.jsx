@@ -3,40 +3,75 @@ import { css } from "@emotion/react"
 import { style } from "./style"
 
 const Navbar = () => {
-  const [navbar, setNavbar] = useState("#142345")
+  const [color, setColor] = useState("#142345")
 
   const changeBackground = () => {
     if (window.scrollY != 0) {
-      setNavbar("#02023d")
+      setColor("#02023d")
     } else {
-      setNavbar("#142345")
+      setColor("#142345")
     }
   }
 
+  // const [link, useLink] = useState("")
   window.addEventListener("scroll", changeBackground)
 
+  const goToLink = item => {
+    let element = document.getElementById(item)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
+  const navItem = ["About", "Skills", "Projects", "Demo", "Contacts"]
+
   return (
-    <div
-      css={css`
-        ${style.wrapper};
-        background: ${navbar};
-      `}
-    >
-      <img
-        src={"/navbar/logo_text.svg"}
-        alt="Logo"
-      />
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Project</li>
-          <li>Demo</li>
-          <li>Contacts</li>
-        </ul>
-      </nav>
-      <p>ludoloops@pm.me</p>
-    </div>
+    <>
+      <div id="navBar" />
+      <div
+        id="Navbar"
+        css={css`
+          ${style.bg};
+          background: ${color};
+        `}
+      >
+        <div css={style.wrapper}>
+          <img
+            src={"/navbar/logo_text.svg"}
+            alt="Logo"
+            css={css`
+              cursor: pointer;
+            `}
+            onClick={() => goToLink("navBar")}
+          />
+          <nav>
+            <ul>
+              {navItem.map((item, index) => {
+                return (
+                  <li
+                    key={index}
+                    onClick={() => goToLink(item)}
+                  >
+                    {item}
+                  </li>
+                )
+              })}
+            </ul>
+          </nav>
+          <div css={style.emailCtn}>
+            <img
+              src="/email.svg"
+              alt="email logo"
+            />
+            <p>ludoloops@pm.me</p>
+            <img
+              src="/github.svg"
+              alt="github logo"
+            />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 export default Navbar

@@ -2,7 +2,10 @@ import React from "react"
 import { css } from "@emotion/react"
 const Demo = () => {
   return (
-    <div className="bg--blue">
+    <div
+      className="bg--blue"
+      id="Demo"
+    >
       <div className="imgContainer">
         <img
           src="/demo/leftBg.png"
@@ -18,10 +21,10 @@ const Demo = () => {
             scrolling="no"
             title="Animated gradient button [pure css]"
             src="https://codepen.io/ludoloops/embed/NWpZeEw?default-tab=result"
-            frameborder="no"
+            frameBorder="no"
             loading="lazy"
             allowtransparency="true"
-            allowfullscreen="true"
+            allowFullScreen={true}
           >
             See the Pen
             <a href="https://codepen.io/ludoloops/pen/NWpZeEw">

@@ -3,7 +3,10 @@ import { css } from "@emotion/react"
 
 const Project = ({ mdx }) => {
   return (
-    <div className="bg--white">
+    <div
+      className="bg--white"
+      id="Projects"
+    >
       <section className="section">
         <h1>Projects</h1>
         <div>

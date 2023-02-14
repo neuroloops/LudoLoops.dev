@@ -3,9 +3,11 @@ import React from "react"
 import { style } from "./style"
 
 const Hero = () => {
-  console.log(style)
   return (
-    <div css={style.bgColor}>
+    <div
+      css={style.bgColor}
+      id="Hero"
+    >
       <div css={style.imgContainer}>
         <div>
           <img
