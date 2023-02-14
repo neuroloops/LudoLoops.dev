@@ -48,6 +48,7 @@ const Hero = () => {
             <img
               src={"/hero/composition.svg"}
               alt=""
+              css={style.composition}
             />
           </div>
         </section>
