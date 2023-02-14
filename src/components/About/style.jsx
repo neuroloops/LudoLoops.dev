@@ -6,7 +6,6 @@ export const style = {
     min-height: 770px;
     width: 100%;
     display: flex;
-    gap: 98px;
     margin-bottom: 99px;
   `,
 
@@ -18,7 +17,8 @@ export const style = {
 
   rightCtn: css`
     height: 770px;
-
+    width: 750px;
+    margin-left: 80px;
     & .aboutMe::after {
       content: "";
       border: 20px solid transparent;
