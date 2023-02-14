@@ -36,10 +36,11 @@ export const style = {
 
   section: css`
     position: absolute;
-    top: 0;
+    width: 100%;
+    max-width: 1900px !important;
+    top: 90px;
     color: var(--white);
-    margin-left: 397px;
-    margin-top: 90px;
+
     h1 {
       font-size: 48px;
       font-weight: var(--bold);

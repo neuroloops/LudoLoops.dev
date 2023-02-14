@@ -1,5 +1,4 @@
 import React from "react"
-// import "./hero.module.scss"
 import { style } from "./style"
 
 const Hero = () => {
