@@ -15,6 +15,7 @@ body {
   --fontBlack: 900;
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  --maxWidth: 67.5rem;
 }
 
 ul {
@@ -42,7 +43,7 @@ ul {
 .section {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1900px;
+  max-width: var(--maxWidth);
   align-items: center;
   justify-content: center;
 }
@@ -51,7 +52,7 @@ ul {
   border-radius: 68px;
   font-size: 14px;
   font-weight: var(--semiBold);
-  padding: 20px 80px;
+  padding: 1.25rem 5rem;
   width: fit-content;
   cursor: pointer;
 }
@@ -63,5 +64,5 @@ ul {
 
 h2 {
   font-weight: 900;
-  font-size: 36px;
+  font-size: 2.25rem;
 }

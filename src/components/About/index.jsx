@@ -5,7 +5,10 @@ import offering from "./offer.json"
 
 const About = () => {
   return (
-    <div className="bg--white">
+    <div
+      className="bg--white"
+      id="About"
+    >
       <section
         className="section"
         css={style.section}
