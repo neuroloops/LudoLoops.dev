@@ -9,6 +9,7 @@ import Demo from "../components/Demo/"
 import Skills from "../components/Skills/"
 import Projects from "../components/Projects/"
 import Header from "../components/Header/"
+import ContactMe from "../components/ContactMe"
 
 const IndexPage = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage = () => {
       <Skills />
       <Projects />
       <Demo />
+      <ContactMe />
       <Footer />
     </div>
   )
