@@ -1,7 +1,7 @@
-const React = require("react")
+// const React = require("react")
 
-export const onClientEntry = () => {
-  window.onload = () => {
-    console.log("test ici")
-  }
-}
+// export const onClientEntry = () => {
+//   window.onload = () => {
+//     console.log("test ici")
+//   }
+// }
