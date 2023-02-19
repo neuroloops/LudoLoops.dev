@@ -14,7 +14,7 @@ const Navbar = () => {
   }
 
   // const [link, useLink] = useState("")
-  window.addEventListener("scroll", changeBackground)
+  // window.addEventListener("scroll", changeBackground)
 
   const goToLink = item => {
     let element = document.getElementById(item)
