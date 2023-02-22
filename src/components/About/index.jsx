@@ -38,8 +38,13 @@ const About = () => {
           <div css={style.offer}>
             <h2>what can I offer</h2>
             <div css={style.cards}>
-              {offering.map(item => {
-                return <Card item={item} />
+              {offering.map((item, index) => {
+                return (
+                  <Card
+                    item={item}
+                    key={index}
+                  />
+                )
               })}
             </div>
           </div>
