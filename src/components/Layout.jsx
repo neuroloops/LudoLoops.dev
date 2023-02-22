@@ -3,8 +3,7 @@ import React from "react"
 import "../styles/global.scss"
 
 const Layout = ({ children }) => {
-  // console.log("props: ", props)
-  return <div>{children}</div>
+  return <>{children}</>
 }
 
 export default Layout
