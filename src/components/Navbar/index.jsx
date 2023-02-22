@@ -2,20 +2,7 @@ import React, { useState } from "react"
 import { css } from "@emotion/react"
 import { style } from "./style"
 
-const Navbar = () => {
-  const [color, setColor] = useState("#142345")
-
-  const changeBackground = () => {
-    if (window.scrollY != 0) {
-      setColor("#02023d")
-    } else {
-      setColor("#142345")
-    }
-  }
-
-  // const [link, useLink] = useState("")
-  // window.addEventListener("scroll", changeBackground)
-
+const Navbar = ({ color }) => {
   const goToLink = item => {
     let element = document.getElementById(item)
     if (element) {
