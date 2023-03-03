@@ -1,6 +1,7 @@
 import React from "react"
 import { style } from "./style"
 import { css } from "@emotion/react"
+
 const Card = ({ children, title, img, darker }) => {
   let bgColor, bgImgColor, noShadow
 
@@ -30,7 +31,7 @@ const Card = ({ children, title, img, darker }) => {
             css={[
               style.rightSide,
               css`
-                ${bgColor};
+                ${bgColor}
               `,
             ]}
           >
@@ -48,7 +49,7 @@ const Card = ({ children, title, img, darker }) => {
                 style.imgBg,
                 style.imgBgRight,
                 css`
-                  ${bgImgColor};
+                  ${bgImgColor}
                 `,
               ]}
             ></div>

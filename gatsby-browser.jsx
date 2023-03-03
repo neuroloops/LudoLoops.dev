@@ -1,6 +1,8 @@
 import React, { useState } from "react"
-
 import Main from "./src/pages"
+import Navbar from "./src/components/Navbar/"
+
+import "./src/styles/global.scss"
 
 export const wrapPageElement = ({ props }) => {
   const [color, setColor] = useState("#142345")
@@ -13,16 +15,22 @@ export const wrapPageElement = ({ props }) => {
     }
   }
 
-  window.addEventListener("scroll", changeBackground)
-
   window.onload = () => {
     window.addEventListener("scroll", changeBackground)
   }
 
   return (
-    <Main
-      {...props}
-      color={color}
-    ></Main>
+    <>
+      <Navbar color={color} />
+      <input
+        type="checkbox"
+        className="toggle toggle-primary"
+      />
+
+      <Main
+        {...props}
+        color={color}
+      ></Main>
+    </>
   )
 }

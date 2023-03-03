@@ -28,19 +28,22 @@ const Skills = () => {
     logo: "/skills/tools.svg",
   }
   return (
-    <div
-      className="bg--blue"
-      id="Skills"
-    >
-      <section className="section">
-        <div css={layout}>
-          <Card skills={frontend} />
-          <Card skills={backend} />
-          <Card skills={devops} />
-          <Card skills={tools} />
-        </div>
-      </section>
-    </div>
+    <>
+      <a className="btn"></a>
+      <div
+        className="bg--blue"
+        id="Skills"
+      >
+        <section className="section">
+          <div css={layout}>
+            <Card skills={frontend} />
+            <Card skills={backend} />
+            <Card skills={devops} />
+            <Card skills={tools} />
+          </div>
+        </section>
+      </div>
+    </>
   )
 }
 

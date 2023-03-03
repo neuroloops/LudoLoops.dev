@@ -1,4 +1,4 @@
-import { css } from "@emotion/react"
+import { css } from "@emotion/react";
 
 export const style = {
   bg: css`
@@ -47,4 +47,4 @@ export const style = {
       margin-left: 12px;
     }
   `,
-}
+};

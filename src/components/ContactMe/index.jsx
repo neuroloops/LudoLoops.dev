@@ -1,5 +1,6 @@
-import React from "react"
-import { style } from "./style"
+import React from "react";
+
+import { style } from "./style";
 
 const ContactMe = () => {
   return (
@@ -19,15 +20,15 @@ const ContactMe = () => {
             Do you want to work with me? <br /> Contact me.
           </p>
         </div>
-        <div
-          className="btn"
-          css={style.button}
+        {/* <Button
+        // className="btn"
+        // css={style.button}
         >
           contact with me
-        </div>
+        </Button> */}
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default ContactMe
+export default ContactMe;

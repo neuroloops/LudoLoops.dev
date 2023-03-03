@@ -1,4 +1,4 @@
-import { css } from "@emotion/react"
+import { css } from "@emotion/react";
 
 export const style = {
   imgContainer: css`
@@ -7,19 +7,23 @@ export const style = {
   `,
 
   bgColor: css`
-    background: linear-gradient(180deg, #03035f 0%, #02023b 100%);
+    background: linear-gradient(
+      180deg,
+      #03035f 0%,
+      #02023b 100%
+    );
     height: 670px;
   `,
 
-  button: css`
-    background-color: #01fef0;
+  // button: css`
+  //   background-color: #01fef0;
 
-    color: var(--txt-btn-dark);
-    margin-top: 40px;
-    :active {
-      background-color: var(--white);
-    }
-  `,
+  //   color: var(--txt-btn-dark);
+  //   margin-top: 40px;
+  //   :active {
+  //     background-color: var(--white);
+  //   }
+  // `,
 
   img2: css`
     margin-top: 35px;
@@ -62,4 +66,4 @@ export const style = {
   composition: css`
     width: 46vw;
   `,
-}
+};

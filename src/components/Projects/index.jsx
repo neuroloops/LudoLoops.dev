@@ -10,7 +10,6 @@ const Project = () => {
     >
       <section className="section">
         <h1>Projects</h1>
-
         <Card
           title="Incom Delta"
           img="incomdelta.png"

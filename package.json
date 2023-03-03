@@ -16,7 +16,11 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.5",
+    "@mantine/core": "^5.10.5",
+    "@mantine/hooks": "^5.10.5",
+    "daisyui": "^2.51.2",
     "gatsby": "^5.6.0",
     "gatsby-plugin-emotion": "^8.6.0",
     "gatsby-plugin-sass": "^6.6.0",
@@ -28,9 +32,13 @@
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.10.0",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.34.0",
     "eslint-plugin-react": "^7.32.2",
     "gatsby-plugin-netlify": "^5.1.0",
-    "gatsby-plugin-pnpm": "^1.2.10"
+    "gatsby-plugin-pnpm": "^1.2.10",
+    "gatsby-plugin-postcss": "^6.7.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
   }
 }

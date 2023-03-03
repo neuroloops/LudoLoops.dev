@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   --ll-blue: #0c162d;
   --teal-dark: #42e8e0;
@@ -49,14 +53,14 @@ ul {
   justify-content: center;
 }
 
-.btn {
-  border-radius: 68px;
-  font-size: 14px;
-  font-weight: var(--semiBold);
-  padding: 1.25rem 5rem;
-  width: fit-content;
-  cursor: pointer;
-}
+// .btn {
+//   border-radius: 68px;
+//   font-size: 14px;
+//   font-weight: var(--semiBold);
+//   padding: 1.25rem 5rem;
+//   width: fit-content;
+//   cursor: pointer;
+// }
 
 .imgContainer {
   width: 100%;
