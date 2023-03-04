@@ -2,17 +2,14 @@ import React from "react"
 import { style } from "./style"
 import Card from "./Card"
 import offering from "./offer.json"
-
+import Wrapper from "../../components/Wrapper"
 const About = () => {
   return (
-    <div
-      className="bg--white"
+    <Wrapper
+      bgColor="white"
       id="About"
     >
-      <section
-        className="section"
-        css={style.section}
-      >
+      <section className="container flex bg-red-600">
         <div css={style.imgCtn}>
           <img
             src={"/about/Ludo_with_logo.png"}
@@ -49,8 +46,9 @@ const About = () => {
             </div>
           </div>
         </div>
+        {/* </section> */}
       </section>
-    </div>
+    </Wrapper>
   )
 }
 

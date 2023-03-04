@@ -37,12 +37,7 @@ const Hero = () => {
               <li>Devops</li>
               <li>tools</li>
             </ul>
-            <a className="btn btn-primary">salut</a>;
-            <Button>contact with me2</Button>
-            <input
-              type="checkbox"
-              class="toggle toggle-primary"
-            />
+
             <button
               className="px-4 py-2 font-bold text-white bg-teal-500 rounded focus:shadow-outline hover:bg-teal-700 focus:outline-none "
               type="button"
