@@ -44,3 +44,4 @@ export const style = {
     background-color: black;
   `,
 }
+export default style

@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 
-export const style = {
+export default {
   bg: css`
     background-color: black;
   `,

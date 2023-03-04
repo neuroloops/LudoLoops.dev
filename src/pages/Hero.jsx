@@ -1,7 +1,6 @@
 import React from "react"
-import { style } from "./style"
-// import { Button } from "../Atom/Button";
-import { Button } from "@mantine/core"
+import style from "../components/Hero/style"
+
 const Hero = () => {
   return (
     <div

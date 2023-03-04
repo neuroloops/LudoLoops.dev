@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import { style } from "./style";
+import style from "../components/ContactMe/style"
 
 const ContactMe = () => {
   return (
@@ -28,7 +28,7 @@ const ContactMe = () => {
         </Button> */}
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default ContactMe;
+export default ContactMe

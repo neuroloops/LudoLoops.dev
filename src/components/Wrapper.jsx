@@ -1,7 +1,14 @@
 import React from "react"
 
-const Wrapper = ({ children, bgColor }) => {
-  return <div className={`bg-${bgColor} `}>{children}</div>
+export default ({ children, className, id }) => {
+  return (
+    <div
+      id={id}
+      className={`${className} flex `}
+    >
+      <section className="flex flex-wrap justify-center lg:flex-nowrap xl:container text-txt-dark ">
+        {children}
+      </section>
+    </div>
+  )
 }
-
-export default Wrapper

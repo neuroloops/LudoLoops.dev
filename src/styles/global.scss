@@ -13,11 +13,11 @@ body {
   --txt-btn-dark: #020244;
   --txt-dark: #202020;
   --bg-footer: #0b0b0b;
-  --medium: 500;
-  --bold: 700;
-  --semiBold: 600;
-  --extraBold: 800;
-  --fontBlack: 900;
+  // --medium: 500;
+  // --bold: 700;
+  // --semiBold: 600;
+  // --extraBold: 800;
+  // --fontBlack: 900;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   --maxWidth: 72rem;
@@ -53,21 +53,40 @@ ul {
   justify-content: center;
 }
 
-// .btn {
-//   border-radius: 68px;
-//   font-size: 14px;
-//   font-weight: var(--semiBold);
-//   padding: 1.25rem 5rem;
-//   width: fit-content;
-//   cursor: pointer;
-// }
-
 .imgContainer {
   width: 100%;
   height: auto;
 }
 
 h2 {
-  font-weight: 900;
-  font-size: 2.25rem;
+  @apply text-4xl font-extrabold;
+}
+
+// sm  size
+@media (min-width: 640px) {
+}
+// md size
+@media (min-width: 768px) {
+}
+
+// lg size
+@media (min-width: 1024px) {
+  .leftArrow::after {
+    content: "";
+    border: 20px solid transparent;
+    position: absolute;
+    border-right-color: var(--white-dark);
+    border-left: 0;
+    left: -19px;
+    top: 25%;
+    margin-top: -20px;
+  }
+}
+
+// xl size
+@media (min-width: 1280px) {
+}
+
+// 2xl size
+@media (min-width: 1536px) {
 }

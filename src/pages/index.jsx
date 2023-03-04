@@ -4,14 +4,12 @@ import About from "./About"
 import Demo from "./Demo"
 import Skills from "./Skills"
 import Projects from "./Projects"
-
 import ContactMe from "./ContactMe"
 
-const IndexPage = ({ color }) => {
+const IndexPage = () => {
   return (
     <main>
       <About />
-      {/* <Test /> */}
       <Skills />
       <Projects />
       <Demo />

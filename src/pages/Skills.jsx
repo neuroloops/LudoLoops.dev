@@ -1,6 +1,6 @@
 import React from "react"
 import { css } from "@emotion/react"
-import Card from "./Card"
+import Card from "../components/Skills/Card"
 
 const Skills = () => {
   const frontend = {
@@ -29,7 +29,6 @@ const Skills = () => {
   }
   return (
     <>
-      <a className="btn"></a>
       <div
         className="bg--blue"
         id="Skills"

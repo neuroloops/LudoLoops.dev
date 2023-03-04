@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 
-export const style = {
+export default {
   main: css`
     padding: 56px;
     margin-bottom: 44px;

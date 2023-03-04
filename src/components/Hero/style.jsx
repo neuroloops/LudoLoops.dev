@@ -1,17 +1,13 @@
-import { css } from "@emotion/react";
+import { css } from "@emotion/react"
 
-export const style = {
+export default {
   imgContainer: css`
     position: relative;
     padding-top: 117px;
   `,
 
   bgColor: css`
-    background: linear-gradient(
-      180deg,
-      #03035f 0%,
-      #02023b 100%
-    );
+    background: linear-gradient(180deg, #03035f 0%, #02023b 100%);
     height: 670px;
   `,
 
@@ -66,4 +62,4 @@ export const style = {
   composition: css`
     width: 46vw;
   `,
-};
+}

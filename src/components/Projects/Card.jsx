@@ -1,5 +1,5 @@
 import React from "react"
-import { style } from "./style"
+import style from "./style"
 import { css } from "@emotion/react"
 
 const Card = ({ children, title, img, darker }) => {
