@@ -6,7 +6,7 @@ const list = ["Frontend", "Backend", "Devops"]
 const Hero = () => {
   return (
     <div
-      className={style.bg + "scroll-mt-20"}
+      className={style.bg + " scroll-mt-20"}
       id="Hero"
     >
       <div className="relative top-[20%] left-3">

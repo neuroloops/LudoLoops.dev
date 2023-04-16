@@ -1,21 +1,33 @@
-// const React = require("react")
-// const Layout = require("./src/pages")
+import React, { useState } from "react"
+import Index from "./src/pages/"
+import "./src/styles/global.scss"
 
-// // Logs when the client route changes
-// export const onRouteUpdate = ({ location, prevLocation }) => {
-//   console.log("new pathname", location.pathname)
-//   console.log("old pathname", prevLocation ? prevLocation.pathname : null)
-// }
+export const wrapPageElement = ({ props }) => {
+  // to limit spam,  encrypt email then display the real one with js when the page is loaded
 
-// // Wraps every page in a component
-// export const wrapPageElement = ({ element, props }) => {
-//   const [link, useLink] = useState("")
-//   window.addEventListener("scroll", changeBackground)
+  const encEmail = window.btoa("ludoloops@pm.me")
+  const [email, setEmail] = useState(encEmail)
+  const [color, setColor] = useState("#02025e")
 
-//   window.onload = () => {
-//     console.log("test ici")
-//     window.addEventListener("scroll", changeBackground)
-//   }
-//   onClientEntry()
-//   return <Layout {...props}>{element}</Layout>
-// }
+  const changeBackground = () => {
+    if (window.scrollY != 0) {
+      setColor("#02023d")
+    } else {
+      setColor("#02025e")
+    }
+  }
+
+  window.onload = () => {
+    window.addEventListener("scroll", changeBackground)
+
+    setEmail(window.atob(encEmail))
+  }
+
+  return (
+    <Index
+      {...props}
+      color={color}
+      email={email}
+    />
+  )
+}
