@@ -1,59 +1,38 @@
 import React from "react"
-import style from "./style"
-import { css } from "@emotion/react"
 
 const Card = ({ children, title, img, darker }) => {
-  let bgColor, bgImgColor, noShadow
+  let box, imgBg
+
+  const boxShadow = "0px 6px 42px rgba(0, 0, 0, 0.08)"
 
   if (darker) {
-    bgColor = "background-color: #F4F4F4"
-    bgImgColor = "background-color:#FFFFFF"
-    noShadow = "box-shadow: none"
+    box = "bg-llWhite-500 shadow-none  "
+    imgBg = "bg-white"
+  } else {
+    box = "shadow-[0_6px_42px_rgba(0,0,0,0.08)] bg-white"
+    imgBg = "bg-llWhite-600"
   }
 
   return (
     <div
-      css={[
-        style.main,
-        css`
-          ${bgColor};
-          ${noShadow}
-        `,
-      ]}
+      className={`${box}  w-full flex mb-11 p-14 rounded-2xl justify-between`}
     >
-      <div>
-        <h2>{title}</h2>
+      <div className="[&>p]:text-sm [&>p]:font-medium">
+        <h2 className="text-2xl font-extrabold">{title}</h2>
         {children}
       </div>
       <div>
         {img ? (
-          <div
-            css={[
-              style.rightSide,
-              css`
-                ${bgColor}
-              `,
-            ]}
-          >
+          <div className="flex p-0  h-[400px] w-[670px] items-center justify-between relative ">
             <div
-              css={[
-                style.imgBg,
-                style.imgBgLeft,
-                css`
-                  ${bgImgColor};
-                `,
-              ]}
+              className={`absolute bottom-0  w-[85px] h-[10px] ${imgBg} `}
             ></div>
             <div
-              css={[
-                style.imgBg,
-                style.imgBgRight,
-                css`
-                  ${bgImgColor}
-                `,
-              ]}
+              className={`absolute  right-0 w-[400px] h-full rounded-r-lg
+              shadow-[0_6px_42px_rgba(0,0,0,0.08)]
+              ${imgBg} `}
             ></div>
-            <div css={style.img}>
+            <div className="absolute">
               <img
                 src={"/projects/" + img}
                 alt={title + "image"}

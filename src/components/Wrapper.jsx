@@ -4,9 +4,9 @@ export default ({ children, className, id }) => {
   return (
     <div
       id={id}
-      className={`${className} flex `}
+      className={className + "flex"}
     >
-      <section className="flex flex-wrap justify-center lg:flex-nowrap xl:container text-txt-dark ">
+      <section className="flex flex-wrap justify-center text-txt-dark xl:container lg:flex-nowrap ">
         {children}
       </section>
     </div>

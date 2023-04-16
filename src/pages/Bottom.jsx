@@ -2,13 +2,17 @@ import React from "react"
 
 import style from "../components/ContactMe/style"
 
-const ContactMe = () => {
+const Bottom = ({ id }) => {
   return (
     <div
       css={style.bg}
-      id="Contacts"
+      id={id}
+      className="scroll-mt-20"
     >
-      <section css={style.section}>
+      <section
+        css={style.section}
+        className="h-96 bg-llBlack-500 text-white"
+      >
         <div>
           <img
             src={"/navbar/logo_text.svg"}
@@ -16,19 +20,15 @@ const ContactMe = () => {
           />
         </div>
         <div>
+          <h2>Interests</h2>
           <p>
-            Do you want to work with me? <br /> Contact me.
+            Mechanical keyboard
+            <br />
           </p>
         </div>
-        {/* <Button
-        // className="btn"
-        // css={style.button}
-        >
-          contact with me
-        </Button> */}
       </section>
     </div>
   )
 }
 
-export default ContactMe
+export default Bottom

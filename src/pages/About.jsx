@@ -1,9 +1,10 @@
 import React from "react"
 import Wrapper from "../components/Wrapper"
+import aboutJson from "../content/about.json"
 
 const Card = ({ children, className }) => {
   return (
-    <div className={`${className} mx-4 sm:mx-8 xl:mx-0 p-8 rounded-2xl mb-8`}>
+    <div className={`${className} mx-4 mb-8 rounded-2xl p-8 sm:mx-8 xl:mx-0`}>
       {children}
     </div>
   )
@@ -11,7 +12,7 @@ const Card = ({ children, className }) => {
 
 const ItemLi = ({ children, img }) => {
   return (
-    <div className="flex items-center mt-6">
+    <div className="bg mt-6 flex items-center">
       <img
         src={"/about/" + img}
         alt=""
@@ -22,34 +23,11 @@ const ItemLi = ({ children, img }) => {
   )
 }
 
-const offering = [
-  {
-    img: "web.svg",
-    text: "Building a landing page website",
-  },
-  {
-    img: "cart.svg",
-    text: "E-commerce with design with different pages",
-  },
-  {
-    img: "social.svg",
-    text: "Social media website",
-  },
-  {
-    img: "linux.svg",
-    text: "Manage and maintenance of Linux server",
-  },
-  {
-    img: "server.svg",
-    text: "Deployment, DNS management",
-  },
-]
-
-const About = () => {
+const About = ({ id }) => {
   return (
     <Wrapper
-      className="pb-24 bg-white text-txt-dark"
-      id="About"
+      className="scroll-mt-20 bg-white pb-24 text-txt-dark"
+      id={id}
     >
       <aside className="w-5/12 max-w-[292px] pt-16">
         <img
@@ -58,24 +36,18 @@ const About = () => {
         />
       </aside>
       <div className="pt-20 xl:ml-20 xl:w-6/12 ">
-        <Card className="relative leftArrow bg-llWhite">
+        <Card className="leftArrow relative bg-llWhite-500">
           <h2>
-            <span className="text-lg">Hello, my name is</span> <br />
-            Ludovic Dumas
+            <span className="text-lg">{aboutJson.title} </span> <br />
+            {aboutJson.name}
           </h2>
-          <p className="p-8 text-sm">
-            I am a software developer with a strong background in JavaScript
-            programming and a passion for blockchain technology. With experience
-            living in both Canada and France, I possess an international
-            perspective and a curiosity for emerging technologies such as OpenAI
-            and ChatGPT.
-          </p>
+          <p className="p-8 text-sm">{aboutJson.content}</p>
         </Card>
 
         <Card className="mb-0 bg-white shadow-card">
           <h2>What can I offer</h2>
-          <div className="grid grid-cols-2">
-            {offering.map((item, index) => {
+          <div className="grid grid-cols-2 ">
+            {aboutJson.offer.map((item, index) => {
               const { img, text } = item
               return (
                 <ItemLi

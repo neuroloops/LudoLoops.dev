@@ -1,15 +1,17 @@
 import React from "react"
 
 import Card from "../components/Projects/Card.jsx"
+import MyButton from "../components/Atom/MyButton.jsx"
 
-const Project = () => {
+const Project = ({ id }) => {
   return (
     <div
-      className="bg--white"
-      id="Projects"
+      className="bg--white scroll-mt-20"
+      id={id}
     >
       <section className="section">
-        <h1>Projects</h1>
+        <h1 className="text-3xl font-black">Projects</h1>
+        <MyButton bg="dark"> Salut </MyButton>
         <Card
           title="Incom Delta"
           img="incomdelta.png"
@@ -62,10 +64,10 @@ const Project = () => {
             to manage it with a GUI instead of CLI.
           </p>
         </Card>
-        <Card darker={true}>
+        <Card>
           <h2>Recettes de Moumy</h2>
         </Card>
-        <Card>
+        <Card darker={true}>
           <h2>Afgnews</h2>
           <p>news website, made with nextjs</p>
         </Card>
