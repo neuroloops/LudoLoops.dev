@@ -1,8 +1,33 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import NavLink from "./Atom/NavLink"
 import goToLink from "./Atom/goToLink"
 
-const Navbar = ({ color, email }) => {
+const Navbar = () => {
+  const encEmail = "bHVkb2xvb3BzQHBtLm1l"
+
+  const [email, setEmail] = useState(encEmail)
+  const [color, setColor] = useState("#02025e")
+
+  if (typeof window !== `undefined`) {
+    window.addEventListener("load", (event) => {
+      console.log("page is fully loaded with event listener")
+    })
+
+    const changeBackground = () => {
+      if (window.scrollY != 0) {
+        setColor("#02023d")
+      } else {
+        setColor("#02025e")
+      }
+    }
+
+    window.addEventListener("scroll", changeBackground)
+
+    useEffect(() => {
+      setEmail(window.atob(encEmail))
+    }, [])
+  }
+
   return (
     <>
       {/* because of sticky, need a fake div to be able to scroll to the top element */}
