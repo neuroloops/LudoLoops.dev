@@ -1,3 +1,3 @@
-exports.onPreRenderHTML = () => {
+exports.replaceRendere = () => {
   console.log("test")
 }
