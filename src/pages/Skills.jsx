@@ -1,11 +1,9 @@
 import React from "react"
 import skillsJson from "../content/skills.json"
-import { onClientEntry } from "../../gatsby-browser"
 
 import * as style from "../styles/skills.module.scss"
 
 const Card = ({ skills }) => {
-  onClientEntry()
   const { title, list, color, logo } = skills
   return (
     <div className="flex max-w-xl rounded-lg bg-llWhite-400 text-txt-dark">
