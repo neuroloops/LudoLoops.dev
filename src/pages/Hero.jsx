@@ -24,9 +24,9 @@ const Hero = () => {
           />
         </div>
 
-        <section className="absolute top-0 flex max-w-7xl items-center pl-5 text-white md:left-[20%]">
-          <div>
-            <h1 className="text-5xl font-bold">
+        <section className="absolute top-0 mx-auto flex w-full flex-wrap-reverse items-center justify-center px-5 text-white ">
+          <div className="flex flex-col items-center">
+            <h1 className="text-center text-5xl font-bold">
               LudoLoops <br />
               <span>Full stack developer</span>
             </h1>
@@ -42,15 +42,14 @@ const Hero = () => {
                 )
               })}
             </ul>
-            <div className="flex w-full">
-              <MyButton btn="dark">Contact me</MyButton>
-            </div>
+            <MyButton btn="dark">Contact me</MyButton>
+            {/* <div className="flex w-full"></div> */}
           </div>
           <div>
             <img
-              src={"/hero/composition.svg"}
-              alt=""
-              className="w-11/12"
+              src="/hero/composition.svg"
+              alt="ludoloops laptop"
+              className="mb-8 w-11/12 max-w-md "
             />
           </div>
         </section>

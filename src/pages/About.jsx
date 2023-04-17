@@ -31,7 +31,7 @@ const About = ({ id }) => {
     >
       <aside className="w-5/12 max-w-[292px] pt-16">
         <img
-          src={"/about/Ludo_with_logo.png"}
+          src={"/about/Ludo_with_logo.webp"}
           alt="Ludovic Dumas profil picture"
         />
       </aside>

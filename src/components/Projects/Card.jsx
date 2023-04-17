@@ -15,7 +15,7 @@ const Card = ({ children, title, img, darker }) => {
 
   return (
     <div
-      className={`${box}  w-full flex mb-11 p-14 rounded-2xl justify-between`}
+      className={`${box}  mb-11 flex w-full flex-wrap justify-center rounded-2xl p-14 xl:justify-between`}
     >
       <div className="[&>p]:text-sm [&>p]:font-medium">
         <h2 className="text-2xl font-extrabold">{title}</h2>
@@ -23,19 +23,20 @@ const Card = ({ children, title, img, darker }) => {
       </div>
       <div>
         {img ? (
-          <div className="flex p-0  h-[400px] w-[670px] items-center justify-between relative ">
+          <div className=" flex h-[400px] w-[670px]   items-center justify-between p-0 xl:relative ">
             <div
-              className={`absolute bottom-0  w-[85px] h-[10px] ${imgBg} `}
+              className={`bottom-0 hidden h-[10px] w-[85px] xl:absolute xl:block ${imgBg} `}
             ></div>
             <div
-              className={`absolute  right-0 w-[400px] h-full rounded-r-lg
-              shadow-[0_6px_42px_rgba(0,0,0,0.08)]
+              className={`right-0  hidden h-full w-[400px] rounded-r-lg
+              shadow-[0_6px_42px_rgba(0,0,0,0.08)]  xl:absolute xl:block
               ${imgBg} `}
             ></div>
-            <div className="absolute">
+            <div className="w-full xl:absolute ">
               <img
                 src={"/projects/" + img}
                 alt={title + "image"}
+                className="w-4/5 max-w-fit xl:w-fit "
               />
             </div>
           </div>

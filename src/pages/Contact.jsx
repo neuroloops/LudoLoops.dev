@@ -9,7 +9,7 @@ const Contact = ({ id }) => {
     >
       <div className="hidden pr-4 lg:block">
         <img
-          src="/demo/leftBg.png"
+          src="/demo/leftBg.webp"
           alt="background image"
         />
       </div>
@@ -18,7 +18,7 @@ const Contact = ({ id }) => {
       </section>
       <div className="hidden pl-4 lg:block">
         <img
-          src="/demo/rightBg.png"
+          src="/demo/rightBg.webp"
           alt="background image"
         />
       </div>
