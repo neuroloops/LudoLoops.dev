@@ -13,7 +13,7 @@ const Project = ({ id }) => {
 
         <Card
           title="Incom Delta"
-          img="incomdelta.png"
+          img="incomdelta.webp"
         >
           <p>Making an online store selling Star Wars helmet</p>
           <p>
@@ -24,7 +24,7 @@ const Project = ({ id }) => {
         </Card>
         <Card
           title="Groupomania"
-          img="groupomania.png"
+          img="groupomania.webp"
           darker={true}
         >
           <ul>
@@ -48,7 +48,7 @@ const Project = ({ id }) => {
         </Card>
         <Card
           title="Media center"
-          img="mediacenter.png"
+          img="mediacenter.webp"
           darker={true}
         >
           <p>
@@ -66,8 +66,11 @@ const Project = ({ id }) => {
         <Card>
           <h2>Recettes de Moumy</h2>
         </Card>
-        <Card darker={true}>
-          <h2>Afgnews</h2>
+        <Card
+          darker={true}
+          title="Afgnews"
+          img="afgnews.webp"
+        >
           <p>news website, made with nextjs</p>
         </Card>
       </section>

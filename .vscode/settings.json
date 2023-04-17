@@ -7,5 +7,6 @@
     "navlist"
   ],
   "svg.preview.background": "transparent",
-  "easynpm.packageManager": "pnpm"
+  "easynpm.packageManager": "pnpm",
+  "easynpm.defaultProjectRoot": "/media/cypher/1Dev/Projet/LudoLoops/site/ludoloops"
 }

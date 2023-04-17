@@ -4,22 +4,24 @@ import ContactForm from "../components/contactForm"
 const Contact = ({ id }) => {
   return (
     <div
-      className="bg--blue flex scroll-mt-20 "
+      className="bg--blue flex scroll-mt-20 items-center py-16"
       id={id}
     >
-      <img
-        src="/demo/leftBg.png"
-        alt="background image"
-      />
-
-      <section className="mx-16 w-3/4">
+      <div className="hidden pr-4 lg:block">
+        <img
+          src="/demo/leftBg.png"
+          alt="background image"
+        />
+      </div>
+      <section className="w-4/5">
         <ContactForm />
       </section>
-
-      <img
-        src="/demo/rightBg.png"
-        alt="background image"
-      />
+      <div className="hidden pl-4 lg:block">
+        <img
+          src="/demo/rightBg.png"
+          alt="background image"
+        />
+      </div>
     </div>
   )
 }

@@ -11,12 +11,12 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" mt-16 flex w-full items-center text-llBlack-500"
+      className=" mt-8 flex w-full items-center text-llBlack-500"
     >
       <input
         type="text"
         name="_gotcha"
-        className="invisible w-0"
+        className="hidden"
       />
       <div className="mr-8">
         <h2 className="mb-8 text-center text-white">Contact me</h2>
