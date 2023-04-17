@@ -2,3 +2,6 @@ node_modules/
 .cache/
 public
 1 notes
+
+# Local Netlify folder
+.netlify
