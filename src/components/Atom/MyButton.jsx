@@ -20,7 +20,7 @@ export const MyButton = ({ children, className, type, disabled, btn }) => {
     <button
       className={
         className +
-        " w-fit cursor-pointer rounded-full px-16 py-2 text-sm font-semibold focus:outline-none"
+        " w-fit cursor-pointer rounded-full px-16 py-2 text-sm font-semibold hover:px-[3.8rem] hover:py-1.5  hover:text-base focus:outline-none"
       }
       disabled={disabled}
       type={type}

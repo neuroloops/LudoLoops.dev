@@ -1,7 +1,6 @@
 import React from "react"
 
 import Card from "../components/Projects/Card.jsx"
-import MyButton from "../components/Atom/MyButton.jsx"
 
 const Project = ({ id }) => {
   return (
@@ -11,7 +10,7 @@ const Project = ({ id }) => {
     >
       <section className="section">
         <h1 className="text-3xl font-black">Projects</h1>
-        <MyButton bg="dark"> Salut </MyButton>
+
         <Card
           title="Incom Delta"
           img="incomdelta.png"
