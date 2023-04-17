@@ -9,7 +9,6 @@ const Header = () => {
         href="/favicon.svg"
       />
       <title>LudoLoops.dev</title>
-      <meta name="darkreader-lock" />
     </Helmet>
   )
 }

@@ -2,7 +2,6 @@ import React from "react"
 
 export const MyButton = ({ children, className, type, disabled, btn }) => {
   if (className === undefined) className = ""
-  console.log(btn)
 
   switch (btn) {
     case undefined:

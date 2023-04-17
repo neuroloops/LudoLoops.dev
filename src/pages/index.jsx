@@ -6,13 +6,12 @@ import Contact from "./Contact"
 import Skills from "./Skills"
 import Projects from "./Projects"
 import Bottom from "./Bottom"
-import Header from "../components/Header/"
+import Header from "../components/Header"
 import Navbar from "../components/Navbar"
 import nav from "../content/navItems.json"
 import Footer from "../components/Footer"
 
-const IndexPage = ({ color, email }, props) => {
-  console.log(props)
+const IndexPage = ({ color, email }) => {
   return (
     <>
       <Header />

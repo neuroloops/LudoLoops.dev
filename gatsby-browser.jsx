@@ -19,9 +19,13 @@ export const wrapPageElement = ({ props }) => {
 
   window.onload = () => {
     window.addEventListener("scroll", changeBackground)
-
     setEmail(window.atob(encEmail))
+    console.log("page is fully loaded")
   }
+
+  window.addEventListener("load", (event) => {
+    console.log("page is fully loaded with event listener")
+  })
 
   return (
     <Index
