@@ -2,6 +2,12 @@ import React, { useState } from "react"
 import Index from "./src/pages/"
 import "./src/styles/global.scss"
 
+export const onClientEntry = () => {
+  window.onload = () => {
+    console.log("ici")
+  }
+}
+
 export const wrapPageElement = ({ props }) => {
   // to limit spam,  encrypt email then display the real one with js when the page is loaded
 
