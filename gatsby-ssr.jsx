@@ -1,3 +1,3 @@
-exports.replaceRendere = () => {
+exports.replaceRenderer = () => {
   console.log("test")
 }
