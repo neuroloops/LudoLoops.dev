@@ -1,0 +1,52 @@
+@mixin borderWidth($border) {
+  .border::after {
+    right: -$border;
+    top: -$border;
+    height: calc(100% + 2 * $border);
+    border-width: $border;
+  }
+
+  .border::before {
+    bottom: -$border;
+    border-bottom-width: calc((8px / 30px) * $border);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  @include borderWidth($border: 10px);
+}
+
+@media only screen and (min-width: 580px) and (max-width: 880px) {
+  @include borderWidth($border: 20px);
+}
+
+@media only screen and (min-width: 880px) {
+  @include borderWidth($border: 30px);
+}
+
+.border::before,
+.border::after {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-color: #e7e7e7;
+}
+
+.border::after {
+  width: 65%;
+  border-radius: 0px 8px 8px 0px;
+  box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.08);
+  clip-path: inset(0px 0px 0px 8px);
+  border-left: 0;
+}
+
+.border::before {
+  left: 0;
+  width: 13%;
+}
+
+.darker::before,
+.darker::after {
+  border-color: white;
+  box-shadow: none;
+}

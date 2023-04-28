@@ -1,6 +1,6 @@
 import React from "react"
 
-import Card from "../components/Projects/Card.jsx"
+import Card from "../components/ProjectCard.jsx"
 
 const Project = ({ id }) => {
   return (
@@ -8,8 +8,8 @@ const Project = ({ id }) => {
       className="bg--white scroll-mt-20"
       id={id}
     >
-      <section className="section">
-        <h1 className="text-3xl font-black">Projects</h1>
+      <section className="section w-4/5">
+        <h1 className="mb-7 mt-20 text-3xl font-black">Projects</h1>
 
         <Card
           title="Incom Delta"
@@ -17,9 +17,16 @@ const Project = ({ id }) => {
         >
           <p>Making an online store selling Star Wars helmet</p>
           <p>
-            It is mandatory to make it fast and reliable. I decide to use
-            Netlify for its CDN and its free tier is really welcome for a new
-            business owner
+            It is mandatory to make it fast and reliable. I decide to use{" "}
+            <a
+              href="https://www.netlify.com"
+              target="_blank"
+              className="underline"
+            >
+              Netlify
+            </a>{" "}
+            for its CDN and its free tier is really welcome for a new business
+            owner
           </p>
         </Card>
         <Card
@@ -27,13 +34,24 @@ const Project = ({ id }) => {
           img="groupomania.webp"
           darker={true}
         >
-          <ul>
+          <p>
+            The goal of these project was to build a social media webiste. It
+            was mandatory to use node.js, SQL and using a frontend framework, I
+            choose Angular for it.
+          </p>
+          <ul
+            className="
+          [&>li]:before:mr-2 [&>li]:before:inline-block [&>li]:before:h-2 [&>li]:before:w-2 [&>li]:before:bg-[#01829E] [&>li]:before:content-['']"
+          >
             <li>User can create an account</li>
             <li>user can delete it</li>
             <li>user can post message and pictures</li>
             <li>user can edit their message</li>
           </ul>
-          <ul>
+          <ul
+            className="
+          [&>li]:before:mr-2 [&>li]:before:inline-block [&>li]:before:h-2 [&>li]:before:w-2 [&>li]:before:bg-[#01829E] [&>li]:before:content-['']"
+          >
             <li>admin can delete or edit message</li>
             <li>admin can add another admin</li>
             <li>admin can reset user password</li>
@@ -63,11 +81,8 @@ const Project = ({ id }) => {
             to manage it with a GUI instead of CLI.
           </p>
         </Card>
-        <Card>
-          <h2>Recettes de Moumy</h2>
-        </Card>
+
         <Card
-          darker={true}
           title="Afgnews"
           img="afgnews.webp"
         >
