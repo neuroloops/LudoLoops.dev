@@ -6,5 +6,5 @@ module.exports = {
     DEV_SSR: true
   },
   plugins: [
-    'gatsby-plugin-pnpm', 'gatsby-plugin-sass', 'gatsby-plugin-postcss', 'gatsby-plugin-netlify']
+    'gatsby-plugin-sass', 'gatsby-plugin-postcss', 'gatsby-plugin-netlify']
 }

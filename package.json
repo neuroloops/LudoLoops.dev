@@ -16,26 +16,22 @@
   },
   "dependencies": {
     "@formspree/react": "^2.4.1",
-    "gatsby": "^5.6.0",
-    "gatsby-plugin-sass": "^6.6.0",
-    "gatsby-source-filesystem": "^5.6.0",
+    "gatsby": "^5.9.0",
+    "gatsby-plugin-sass": "^6.9.0",
+    "gatsby-source-filesystem": "^5.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "sass": "^1.58.0"
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "@netlify/plugin-gatsby": "^3.6.2",
-    "autoprefixer": "^10.4.13",
-    "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.32.2",
+    "autoprefixer": "^10.4.14",
     "gatsby-plugin-netlify": "^5.1.0",
-    "gatsby-plugin-pnpm": "^1.2.10",
-    "gatsby-plugin-postcss": "^6.7.0",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.7",
-    "prettier-plugin-tailwindcss": "^0.2.7",
-    "tailwindcss": "^3.2.7"
-  },
-  "packageManager": "pnpm@8.2.0"
+    "gatsby-plugin-postcss": "^6.9.0",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwindcss": "^3.3.2"
+  }
 }

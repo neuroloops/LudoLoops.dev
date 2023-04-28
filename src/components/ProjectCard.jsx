@@ -35,7 +35,7 @@ const Card = ({ children, title, img, darker }) => {
     >
       <div className="mt-16 px-16 xl:w-1/3 [&>p]:text-sm [&>p]:font-medium">
         <h2 className="mb-4 text-2xl font-extrabold">{title}</h2>
-        <p>{children}</p>
+        <>{children}</>
       </div>
 
       <>{img ? <ImgBlock {...{ darker, img, title }} /> : <></>}</>
