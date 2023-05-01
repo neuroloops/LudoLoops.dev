@@ -1,16 +1,16 @@
 import React from "react"
 
+import Wrapper from "../components/Wrapper"
 import Card from "../components/ProjectCard.jsx"
 
 const Project = ({ id }) => {
   return (
-    <div
-      className="bg--white scroll-mt-20"
+    <Wrapper
       id={id}
+      className="bg--white scroll-mt-20"
     >
-      <section className="section w-4/5">
-        <h1 className="mb-7 mt-20 text-3xl font-black">Projects</h1>
-
+      <h1 className="mb-7 mt-20 text-3xl font-black">Projects</h1>
+      <div>
         <Card
           title="Incom Delta"
           img="incomdelta.webp"
@@ -88,8 +88,8 @@ const Project = ({ id }) => {
         >
           <p>news website, made with nextjs</p>
         </Card>
-      </section>
-    </div>
+      </div>
+    </Wrapper>
   )
 }
 

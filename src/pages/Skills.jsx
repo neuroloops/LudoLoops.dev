@@ -2,12 +2,12 @@ import React from "react"
 import skillsJson from "../content/skills.json"
 
 import * as style from "../styles/skills.module.scss"
-
+import Wrapper from "../components/Wrapper"
 const Card = ({ skills }) => {
   const { title, list, color, logo } = skills
   return (
     <div className="flex max-w-xl rounded-lg bg-llWhite-400 text-txt-dark">
-      <div className="mt-4 mb-4 flex w-36 flex-col items-center">
+      <div className="mb-4 mt-4 flex w-36 flex-col items-center">
         <h2 className="mb-4 text-lg font-black">{title}</h2>
         <img
           className="w-[90px]"
@@ -44,23 +44,21 @@ const Card = ({ skills }) => {
 const Skills = ({ id }) => {
   return (
     <>
-      <div
-        className="bg--blue scroll-mt-20"
+      <Wrapper
+        className="bg--blue scroll-mt-20 py-20"
         id={id}
       >
-        <section className="section">
-          <div className="mt-16 mb-16 grid grid-cols-1 gap-7 md:grid-cols-2">
-            {skillsJson.map((skills, index) => {
-              return (
-                <Card
-                  skills={skills}
-                  key={index}
-                />
-              )
-            })}
-          </div>
-        </section>
-      </div>
+        <div className="mb-16 mt-16 grid grid-cols-1 gap-7 md:grid-cols-2">
+          {skillsJson.map((skills, index) => {
+            return (
+              <Card
+                skills={skills}
+                key={index}
+              />
+            )
+          })}
+        </div>
+      </Wrapper>
     </>
   )
 }

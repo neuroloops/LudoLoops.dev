@@ -5,7 +5,7 @@ import About from "./About"
 import Contact from "./Contact"
 import Skills from "./Skills"
 import Projects from "./Projects"
-import Bottom from "./Bottom"
+import Interest from "./Interest"
 import Header from "../components/Header"
 import Navbar from "../components/Navbar"
 import nav from "../content/navItems.json"
@@ -25,7 +25,7 @@ const IndexPage = ({ color, email }) => {
         <Skills id={nav[1]} />
         <Projects id={nav[2]} />
         <Contact id={nav[3]} />
-        <Bottom id={nav[4]} />
+        <Interest id={nav[4]} />
       </main>
       <Footer />
     </>

@@ -18,38 +18,18 @@ body {
   --maxWidth: 72rem;
 }
 
-// .marginScroll {
-//   scroll-margin-top: 5rem;
-// }
-
 ul {
   list-style-type: none;
 }
 
-@mixin bg {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .bg--white {
-  @include bg;
   background-color: var(--white);
   color: var(--txt-dark);
 }
 
 .bg--blue {
-  @include bg;
   background-color: var(--ll-blue);
   color: var(--white);
-}
-
-.section {
-  // display: flex;
-  // flex-wrap: wrap;
-  // max-width: var(--maxWidth);
-  // align-items: center;
-  // justify-content: center;
 }
 
 .imgContainer {

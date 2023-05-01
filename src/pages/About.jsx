@@ -26,7 +26,7 @@ const ItemLi = ({ children, img }) => {
 const About = ({ id }) => {
   return (
     <Wrapper
-      className="scroll-mt-20 bg-white pb-24 text-txt-dark"
+      className="flex scroll-mt-20 bg-white pb-24 text-txt-dark"
       id={id}
     >
       <aside className="w-5/12 max-w-[292px] pt-16">
