@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   --ll-blue: #0c162d;
   --teal-dark: #42e8e0;
@@ -9,51 +13,23 @@ body {
   --txt-btn-dark: #020244;
   --txt-dark: #202020;
   --bg-footer: #0b0b0b;
-  --bold: 700;
-  --semiBold: 600;
-  --extraBold: 800;
-  --fontBlack: 900;
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  --maxWidth: 72rem;
 }
 
 ul {
   list-style-type: none;
 }
 
-@mixin bg {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .bg--white {
-  @include bg;
   background-color: var(--white);
   color: var(--txt-dark);
 }
 
 .bg--blue {
-  @include bg;
   background-color: var(--ll-blue);
   color: var(--white);
-}
-
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1900px;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn {
-  border-radius: 68px;
-  font-size: 14px;
-  font-weight: var(--semiBold);
-  padding: 20px 80px;
-  width: fit-content;
-  cursor: pointer;
 }
 
 .imgContainer {
@@ -62,6 +38,34 @@ ul {
 }
 
 h2 {
-  font-weight: 900;
-  font-size: 36px;
+  @apply text-4xl font-extrabold;
+}
+
+// sm  size
+@media (min-width: 640px) {
+}
+// md size
+@media (min-width: 768px) {
+}
+
+// lg size
+@media (min-width: 1024px) {
+  .leftArrow::after {
+    content: "";
+    border: 20px solid transparent;
+    position: absolute;
+    border-right-color: var(--white-dark);
+    border-left: 0;
+    left: -19px;
+    top: 25%;
+    margin-top: -20px;
+  }
+}
+
+// xl size
+@media (min-width: 1280px) {
+}
+
+// 2xl size
+@media (min-width: 1536px) {
 }

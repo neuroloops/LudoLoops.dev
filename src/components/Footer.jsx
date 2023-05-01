@@ -1,63 +1,16 @@
 import React from "react"
-import styled from "@emotion/styled"
+import NavLink from "./Atom/NavLink"
 
-const Footer = ({ mdx }) => {
+const Footer = () => {
+  const items = ["About"]
   return (
-    <FooterDiv className="footer">
-      <div>
-        <Section>
-          <div>
-            <img
-              src={"/logo_text.svg"}
-              alt="ludoloops logomark"
-            />
-          </div>
-          <div>
-            <p>Do you want to work with me? Contact me.</p>
-          </div>
-          <Button className="btn">contact with me</Button>
-        </Section>
-        <div className="footerNav">
-          <ul>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-          </ul>
-          &copy;{new Date().getFullYear()} {mdx}
-        </div>
-      </div>
-    </FooterDiv>
+    <footer className=" flex  w-full bg-llBlack-500 pb-20 pt-4 text-xs font-bold text-white ">
+      <ul className="flex w-2/4 gap-10 pl-10 ">
+        <NavLink />
+      </ul>
+      LudoLoops &copy;{new Date().getFullYear()}
+    </footer>
   )
 }
 
 export default Footer
-
-const FooterDiv = styled.footer`
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  background-color: var(--bg-footer);
-  color: var(--white);
-  height: 450px;
-  ul {
-    display: flex;
-    gap: 41px;
-  }
-  .footerNav {
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-`
-
-const Section = styled.section`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
-
-const Button = styled.div`
-  background-color: var(--teal);
-  color: var(--txt-btn-dark);
-`

@@ -1,27 +1,33 @@
-import React from "react"
+import React, { useState } from "react"
 
-import "../styles/global.scss"
-import Footer from "../components/Footer"
-import Hero from "../components/Hero/"
-import Navbar from "../components/Navbar"
-import About from "../components/About/"
-import Demo from "../components/Demo"
-import Skills from "../components/Skills"
-import Projects from "../components/Projects"
+import Hero from "./Hero"
+import About from "./About"
+import Contact from "./Contact"
+import Skills from "./Skills"
+import Projects from "./Projects"
+import Interest from "./Interest"
 import Header from "../components/Header"
+import Navbar from "../components/Navbar"
+import nav from "../content/navItems.json"
+import Footer from "../components/Footer"
 
-const IndexPage = () => {
+const IndexPage = ({ color, email }) => {
+  const [burgerOpen, setBurger] = useState(false)
+
   return (
-    <div>
+    <>
       <Header />
-      <Navbar />
+      <Navbar {...{ color, email, burgerOpen, setBurger }} />
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Demo />
+      <main>
+        <About id={nav[0]} />
+        <Skills id={nav[1]} />
+        <Projects id={nav[2]} />
+        <Contact id={nav[3]} />
+        <Interest id={nav[4]} />
+      </main>
       <Footer />
-    </div>
+    </>
   )
 }
 

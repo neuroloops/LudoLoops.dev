@@ -1,5 +1,12 @@
 {
   "cSpell.words": [
+    "Groupomania",
+    "Incom",
+    "incomdelta",
+    "mediacenter",
     "navlist"
-  ]
+  ],
+  "svg.preview.background": "transparent",
+  "easynpm.packageManager": "pnpm",
+  "easynpm.defaultProjectRoot": "/media/cypher/1Dev/Projet/LudoLoops/site/ludoloops"
 }
