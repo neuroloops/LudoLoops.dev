@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Hero from "./Hero"
 import About from "./About"
@@ -12,13 +12,12 @@ import nav from "../content/navItems.json"
 import Footer from "../components/Footer"
 
 const IndexPage = ({ color, email }) => {
+  const [burgerOpen, setBurger] = useState(false)
+
   return (
     <>
       <Header />
-      <Navbar
-        color={color}
-        email={email}
-      />
+      <Navbar {...{ color, email, burgerOpen, setBurger }} />
       <Hero />
       <main>
         <About id={nav[0]} />

@@ -2,7 +2,7 @@ import React from "react"
 import navItems from "../../content/navItems.json"
 import goToLink from "./goToLink"
 
-const NavLink = () => {
+const NavLink = ({ setBurger }) => {
   return (
     <>
       {navItems.map((item, index) => {
@@ -10,7 +10,12 @@ const NavLink = () => {
           <li
             className="cursor-pointer "
             key={index}
-            onClick={() => goToLink(item)}
+            onClick={() => {
+              goToLink(item)
+              if (setBurger) {
+                setBurger(false)
+              }
+            }}
           >
             {item}
           </li>

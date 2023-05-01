@@ -5,8 +5,6 @@ import "./src/styles/global.scss"
 export const wrapPageElement = ({ props }) => {
   // to limit spam,  encrypt email then display the real one with js when the page is loaded
 
-  // const encEmail = window.btoa("ludoloops@pm.me")
-
   const encEmail = "bHVkb2xvb3BzQHBtLm1l"
 
   const [email, setEmail] = useState(encEmail)
