@@ -7,10 +7,12 @@ const Project = ({ id }) => {
   return (
     <Wrapper
       id={id}
-      className="bg--white scroll-mt-20"
+      className="bg--white"
     >
-      <h1 className="mb-7 mt-20 text-3xl font-black">Projects</h1>
-      <div>
+      <header>
+        <h2 className="mb-7 mt-20 text-3xl font-black">Projects</h2>
+      </header>
+      <section>
         <Card
           title="Incom Delta"
           img="incomdelta.webp"
@@ -88,7 +90,7 @@ const Project = ({ id }) => {
         >
           <p>news website, made with nextjs</p>
         </Card>
-      </div>
+      </section>
     </Wrapper>
   )
 }

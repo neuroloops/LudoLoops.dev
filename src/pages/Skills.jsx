@@ -3,6 +3,7 @@ import skillsJson from "../content/skills.json"
 
 import * as style from "../styles/skills.module.scss"
 import Wrapper from "../components/Wrapper"
+
 const Card = ({ skills }) => {
   const { title, list, color, logo } = skills
   return (
@@ -43,23 +44,21 @@ const Card = ({ skills }) => {
 
 const Skills = ({ id }) => {
   return (
-    <>
-      <Wrapper
-        className="bg--blue scroll-mt-20 py-20"
-        id={id}
-      >
-        <div className="mb-16 mt-16 grid grid-cols-1 gap-7 md:grid-cols-2">
-          {skillsJson.map((skills, index) => {
-            return (
-              <Card
-                skills={skills}
-                key={index}
-              />
-            )
-          })}
-        </div>
-      </Wrapper>
-    </>
+    <Wrapper
+      className="bg--blue "
+      id={id}
+    >
+      <div className="mb-16 mt-16 grid grid-cols-1 gap-7 border border-yellow-300 py-20 md:grid-cols-2">
+        {skillsJson.map((skills, index) => {
+          return (
+            <Card
+              skills={skills}
+              key={index}
+            />
+          )
+        })}
+      </div>
+    </Wrapper>
   )
 }
 

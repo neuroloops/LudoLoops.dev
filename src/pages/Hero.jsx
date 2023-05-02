@@ -6,21 +6,22 @@ const list = ["Frontend", "Backend", "Devops"]
 const Hero = () => {
   return (
     <div
-      className={style.bg + " scroll-mt-20"}
+      className={style.bg + " max-w-screen scroll-mt-20"}
       id="Hero"
     >
-      <div className="relative top-[20%] left-3">
+      <div className="relative left-3 top-[20%] ">
         <div>
           <img
             src={"/hero/LL_hero_top.svg"}
             alt="background logo"
+            className="max-w-screen"
           />
         </div>
-        <div className="mt-8 ml-16 ">
+        <div className="ml-16 mt-8 ">
           <img
             src={"/hero/LL_hero_bottom.svg"}
             alt="background logo"
-            className="w-96"
+            className="max-w-screen w-96"
           />
         </div>
 

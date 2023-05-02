@@ -11,7 +11,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" mt-8  flex-wrap items-center rounded-xl   text-llBlack-500  "
+      className="  w-full flex-wrap items-center rounded-xl  text-llBlack-500"
     >
       <div className="hidden">
         <label htmlFor="_gotcha"></label>
@@ -23,11 +23,11 @@ const ContactForm = () => {
       </div>
       <h2 className="mb-8 text-center text-white">Contact me</h2>
       <div className={style.bigBorder + " rounded-xl p-8 xl:flex xl:p-0"}>
-        <div className="xl:mr-8">
+        <div className="z-30 xl:mr-8">
           <div
             className={
               style.emailBorder +
-              " background flex w-full flex-col rounded-xl  p-0 xl:p-8"
+              " background  flex w-full flex-col  rounded-xl p-0 xl:p-8"
             }
           >
             <label
@@ -53,7 +53,8 @@ const ContactForm = () => {
 
         <div
           className={
-            style.messageBorder + " flex  w-full flex-col rounded-xl p-2 xl:p-8"
+            style.messageBorder +
+            " z-30  flex w-full flex-col rounded-xl p-2 xl:p-8 "
           }
         >
           <label

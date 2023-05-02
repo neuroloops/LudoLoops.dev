@@ -4,9 +4,9 @@ const Interest = ({ id }) => {
   return (
     <Wrapper
       id={id}
-      className="h-96 scroll-mt-20 bg-llBlack-500 "
+      className=" bg-llBlack-500 "
     >
-      <div className="text-white">
+      <div className="h-96 text-white">
         <h2>Interests</h2>
         <ul>
           <li>Mechanical keyboard</li>

@@ -29,37 +29,43 @@ const About = ({ id }) => {
       className="flex scroll-mt-20 bg-white pb-24 text-txt-dark"
       id={id}
     >
-      <aside className="w-5/12 max-w-[292px] pt-16">
-        <img
-          src={"/about/Ludo_with_logo.webp"}
-          alt="Ludovic Dumas profil picture"
-        />
-      </aside>
-      <div className="pt-20 xl:ml-20 xl:w-6/12 ">
-        <Card className="leftArrow relative bg-llWhite-500">
-          <h2>
-            <span className="text-lg">{aboutJson.title} </span> <br />
-            {aboutJson.name}
-          </h2>
-          <p className="p-8 text-sm">{aboutJson.content}</p>
-        </Card>
+      <div className="flex flex-wrap justify-center">
+        <aside className="w-5/12 max-w-[292px] pt-16">
+          <img
+            src={"/about/Ludo_with_logo.webp"}
+            alt="Ludovic Dumas profil picture"
+          />
+        </aside>
+        <div className="pt-20 xl:ml-20 xl:w-6/12 ">
+          <Card className="leftArrow relative bg-llWhite-500">
+            <header>
+              <h2>
+                <span className="text-lg">{aboutJson.title} </span> <br />
+                {aboutJson.name}
+              </h2>
+            </header>
+            <section className="p-8 text-sm">
+              <p>{aboutJson.content}</p>
+            </section>
+          </Card>
 
-        <Card className="mb-0 bg-white shadow-card">
-          <h2>What can I offer</h2>
-          <div className="grid grid-cols-2 ">
-            {aboutJson.offer.map((item, index) => {
-              const { img, text } = item
-              return (
-                <ItemLi
-                  img={img}
-                  key={index}
-                >
-                  {text}
-                </ItemLi>
-              )
-            })}
-          </div>
-        </Card>
+          <Card className="mb-0 bg-white shadow-card">
+            <h3 className="text-4xl font-extrabold">What can I offer</h3>
+            <div className="block md:grid md:grid-cols-2 ">
+              {aboutJson.offer.map((item, index) => {
+                const { img, text } = item
+                return (
+                  <ItemLi
+                    img={img}
+                    key={index}
+                  >
+                    {text}
+                  </ItemLi>
+                )
+              })}
+            </div>
+          </Card>
+        </div>
       </div>
     </Wrapper>
   )

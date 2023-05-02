@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  // outline: 1px solid red;
+}
+
 body {
   --ll-blue: #0c162d;
   --teal-dark: #42e8e0;
@@ -16,6 +20,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   --maxWidth: 72rem;
+  overflow: auto;
 }
 
 ul {

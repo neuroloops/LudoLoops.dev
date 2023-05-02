@@ -3,26 +3,28 @@ import ContactForm from "../components/contactForm"
 import Wrapper from "../components/Wrapper"
 const Contact = ({ id }) => {
   return (
-    <Wrapper
+    <div
       id={id}
-      className="bg--blue flex scroll-mt-20 items-center py-16 [&>section]:items-center"
+      className="bg--blue relative scroll-mt-20  py-16   "
     >
-      <div className="hidden pr-4 lg:block">
+      <div className="absolute hidden  max-h-full w-screen flex-row items-center justify-between pb-20 xl:flex">
         <img
           src="/demo/leftBg.webp"
           alt="background image"
+          className=" h-full"
         />
-      </div>
-
-      <ContactForm />
-
-      <div className="hidden pl-4 lg:block">
+        <div className="xl:w-[1280px]"></div>
         <img
           src="/demo/rightBg.webp"
           alt="background image"
+          className=" h-full"
         />
       </div>
-    </Wrapper>
+
+      <div className="mx-auto mt-8 flex w-full items-center justify-center border  border-yellow-400 px-4 text-txt-dark xl:w-[1280px] xl:px-20">
+        <ContactForm />
+      </div>
+    </div>
   )
 }
 
