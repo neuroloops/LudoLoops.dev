@@ -48,7 +48,7 @@ const Skills = ({ id }) => {
       className="bg--blue "
       id={id}
     >
-      <div className="mb-16 mt-16 grid grid-cols-1 gap-7 border border-yellow-300 py-20 md:grid-cols-2">
+      <div className="mb-16 mt-16 grid grid-cols-1 gap-7  py-20 md:grid-cols-2">
         {skillsJson.map((skills, index) => {
           return (
             <Card

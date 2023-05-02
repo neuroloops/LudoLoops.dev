@@ -21,7 +21,7 @@ const Contact = ({ id }) => {
         />
       </div>
 
-      <div className="mx-auto mt-8 flex w-full items-center justify-center border  border-yellow-400 px-4 text-txt-dark xl:w-[1280px] xl:px-20">
+      <div className="mx-auto mt-8 flex w-full items-center justify-center  px-4 text-txt-dark xl:w-[1280px] xl:px-20">
         <ContactForm />
       </div>
     </div>
